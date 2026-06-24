@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { fadeUp } from '../animations/fadeUp';
 import { fadeIn } from '../animations/fadeIn';
+import CountUp from '../components/CountUp';
 
 const About = () => {
   return (
@@ -33,15 +34,15 @@ const About = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 border-t border-border pt-8">
                 <div className="bg-white p-6 border border-border shadow-sm rounded-xl">
-                  <div className="text-h2 font-black text-blue mb-1">16+</div>
+                  <div className="text-h2 font-black text-blue mb-1"><CountUp end={16} suffix="+" /></div>
                   <div className="text-[10px] font-bold text-muted uppercase tracking-widest mt-2">Years Exp</div>
                 </div>
                 <div className="bg-white p-6 border border-border shadow-sm rounded-xl">
-                  <div className="text-h2 font-black text-blue mb-1">1Cr+</div>
+                  <div className="text-h2 font-black text-blue mb-1"><CountUp end={1} suffix="Cr+" /></div>
                   <div className="text-[10px] font-bold text-muted uppercase tracking-widest mt-2">Annual Turnover</div>
                 </div>
                 <div className="bg-white p-6 border border-border shadow-sm rounded-xl">
-                  <div className="text-h2 font-black text-blue mb-1">10+</div>
+                  <div className="text-h2 font-black text-blue mb-1"><CountUp end={10} suffix="+" /></div>
                   <div className="text-[10px] font-bold text-muted uppercase tracking-widest mt-2">Authorized Brands</div>
                 </div>
               </div>

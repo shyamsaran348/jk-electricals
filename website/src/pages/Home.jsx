@@ -3,6 +3,7 @@ import { fadeUp } from '../animations/fadeUp';
 import { Link } from 'react-router-dom';
 import productsData from '../data/products.json';
 import { ArrowRight, CheckCircle2, ShieldCheck, Truck, PackageCheck, Zap } from 'lucide-react';
+import CountUp from '../components/CountUp';
 
 const Home = () => {
   const featuredProducts = productsData.filter(p => p.isFeatured).slice(0, 4);
@@ -157,19 +158,19 @@ const Home = () => {
             
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-white p-8 border border-border shadow-md rounded-xl text-center flex flex-col justify-center items-center h-48">
-                <div className="text-display font-black text-navy mb-2">15+</div>
+                <div className="text-display font-black text-navy mb-2"><CountUp end={15} suffix="+" /></div>
                 <div className="text-xs font-bold uppercase tracking-widest text-muted">Years Exp</div>
               </div>
               <div className="bg-white p-8 border border-border shadow-md rounded-xl text-center flex flex-col justify-center items-center h-48">
-                <div className="text-display font-black text-navy mb-2">50+</div>
+                <div className="text-display font-black text-navy mb-2"><CountUp end={50} suffix="+" /></div>
                 <div className="text-xs font-bold uppercase tracking-widest text-muted">Brands</div>
               </div>
               <div className="bg-white p-8 border border-border shadow-md rounded-xl text-center flex flex-col justify-center items-center h-48 transform lg:translate-y-6">
-                <div className="text-display font-black text-navy mb-2">5K+</div>
+                <div className="text-display font-black text-navy mb-2"><CountUp end={5} suffix="K+" /></div>
                 <div className="text-xs font-bold uppercase tracking-widest text-muted">Deliveries</div>
               </div>
               <div className="bg-white p-8 border border-border shadow-md rounded-xl text-center flex flex-col justify-center items-center h-48 transform lg:translate-y-6">
-                <div className="text-display font-black text-navy mb-2">24/7</div>
+                <div className="text-display font-black text-navy mb-2"><CountUp end={24} suffix="/7" /></div>
                 <div className="text-xs font-bold uppercase tracking-widest text-muted">Support</div>
               </div>
             </div>
@@ -178,18 +179,27 @@ const Home = () => {
       </section>
 
       {/* 6. Industries Served */}
-      <section className="py-24 bg-white border-b border-border">
-        <div className="container mx-auto">
+      <section className="py-24 bg-white border-b border-border overflow-hidden">
+        <div className="container mx-auto max-w-full px-0">
           <div className="text-center mb-16">
             <h2 className="text-h2 font-bold text-navy">Industries We Supply</h2>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
-            {['Manufacturing', 'Infrastructure', 'Oil & Gas', 'Pharmaceuticals', 'Power Plants'].map((ind, i) => (
-              <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={i} className="bg-surface p-6 border border-border text-center hover:border-blue transition-colors">
-                <CheckCircle2 className="mx-auto mb-4 text-blue" size={24} />
-                <p className="text-sm font-bold text-navy uppercase">{ind}</p>
-              </motion.div>
-            ))}
+          
+          <div className="relative flex overflow-hidden group py-4">
+            <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-white via-transparent to-white w-full h-full"></div>
+            
+            <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused]">
+              {[...Array(2)].map((_, i) => (
+                <div key={i} className="flex gap-6 px-3 min-w-max">
+                  {['Manufacturing', 'Infrastructure', 'Oil & Gas', 'Pharmaceuticals', 'Power Plants', 'Automotive', 'Textiles'].map((ind, j) => (
+                    <div key={j} className="bg-surface p-8 border border-border text-center hover:border-blue transition-colors w-64 flex-shrink-0 rounded-2xl shadow-sm">
+                      <CheckCircle2 className="mx-auto mb-4 text-blue" size={28} />
+                      <p className="text-sm font-bold text-navy uppercase">{ind}</p>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

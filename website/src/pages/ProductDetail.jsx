@@ -19,13 +19,7 @@ const ProductDetail = () => {
     );
   }
 
-  // Placeholder images for the bento grid if the product doesn't have multiple
-  const galleryImages = [
-    product.image,
-    "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    "https://images.unsplash.com/photo-1565814329452-e1efa11c5e8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-  ];
+
 
   return (
     <div className="w-full bg-surface pb-24 pt-28">
@@ -43,21 +37,14 @@ const ProductDetail = () => {
         {/* Product Layout */}
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           
-          {/* Product Gallery (Bento Style) */}
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={fadeUp} className="flex-1 space-y-4 w-full sticky top-32">
-            <div className="bg-white aspect-video relative group border border-border p-4 shadow-sm flex items-center justify-center rounded-3xl overflow-hidden">
+          {/* Single Product Image */}
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={fadeUp} className="flex-1 w-full sticky top-32">
+            <div className="bg-white aspect-square lg:aspect-[4/3] relative group border border-border p-8 shadow-sm flex items-center justify-center rounded-3xl overflow-hidden">
               <img 
-                src={galleryImages[0]} 
+                src={product.image} 
                 alt={product.name} 
-                className="w-full h-full object-cover mix-blend-multiply"
+                className="w-full h-full object-contain mix-blend-multiply transition-transform duration-700 group-hover:scale-105"
               />
-            </div>
-            <div className="grid grid-cols-4 gap-4">
-              {galleryImages.map((img, i) => (
-                <div key={i} className="aspect-square bg-white border border-border p-2 hover:border-blue transition-colors cursor-pointer shadow-sm rounded-2xl overflow-hidden">
-                  <img src={img} alt={`Detail ${i+1}`} className="w-full h-full object-cover mix-blend-multiply opacity-70 hover:opacity-100 transition-opacity" />
-                </div>
-              ))}
             </div>
           </motion.div>
 
