@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products | JK Industrial Enterprise</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f4f6;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #75777f;
+            border-radius: 2px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#d7dadc",
+                        "inverse-on-surface": "#eef1f3",
+                        "primary-fixed": "#d9e2ff",
+                        "outline": "#75777f",
+                        "on-surface-variant": "#44464e",
+                        "surface": "#f7fafc",
+                        "on-secondary-container": "#586377",
+                        "inverse-primary": "#b4c6f4",
+                        "surface-variant": "#e0e3e5",
+                        "tertiary": "#00081c",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#acc7ff",
+                        "background": "#f7fafc",
+                        "on-primary-container": "#7687b2",
+                        "inverse-surface": "#2d3133",
+                        "primary-fixed-dim": "#b4c6f4",
+                        "on-surface": "#181c1e",
+                        "primary": "#00081e",
+                        "secondary-container": "#d5e0f7",
+                        "on-secondary-fixed": "#111c2c",
+                        "surface-container": "#ebeef0",
+                        "surface-container-high": "#e5e9eb",
+                        "surface-container-low": "#f1f4f6",
+                        "on-tertiary-fixed-variant": "#004491",
+                        "on-background": "#181c1e",
+                        "secondary-fixed": "#d8e3fa",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#0a1f44",
+                        "tertiary-fixed": "#d7e2ff",
+                        "on-tertiary-fixed": "#001a40",
+                        "secondary": "#545f72",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#041a3f",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#34466d",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#001f49",
+                        "surface-container-highest": "#e0e3e5",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "outline-variant": "#c5c6cf",
+                        "surface-tint": "#4c5e86",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f7fafc",
+                        "on-tertiary-container": "#4d87e6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "max-width": "1440px",
+                        "unit": "4px",
+                        "margin-desktop": "48px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full bg-surface border-b border-outline-variant z-50 shadow-sm">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">JK Industrial</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">About Us</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary border-b-2 border-primary pb-1" href="#">Products</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">Industries</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">Clients</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="p-2 hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined text-primary">search</span>
+</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 font-label-md text-label-md uppercase tracking-widest font-bold hover:bg-primary-container transition-all">
+                    Request Quote
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Search Section -->
+<section class="bg-surface border-b border-outline-variant">
+<div class="max-w-max-width mx-auto px-margin-desktop py-12 md:py-16">
+<div class="max-w-3xl">
+<h1 class="font-display-lg text-display-lg mb-6 text-primary">Industrial Inventory</h1>
+<p class="font-body-lg text-body-lg text-secondary mb-10">Access high-precision components, switchgear, and automation solutions for large-scale enterprise operations.</p>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline">search</span>
+</div>
+<input class="w-full h-14 pl-12 pr-4 bg-surface-container-lowest border border-outline-variant focus:border-primary focus:ring-0 font-body-md transition-all placeholder:text-outline" placeholder="Search by SKU, Product Name, or Category..." type="text"/>
+<button class="absolute inset-y-2 right-2 px-6 bg-primary text-on-primary font-label-md uppercase tracking-wider flex items-center gap-2 hover:bg-primary-container transition-all">
+                            Search Catalogue
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Explorer Section -->
+<section class="max-w-max-width mx-auto px-margin-desktop py-12">
+<div class="flex flex-col md:flex-row gap-gutter">
+<!-- Filter Sidebar -->
+<aside class="w-full md:w-72 flex-shrink-0">
+<div class="sticky top-32 space-y-8">
+<div>
+<h3 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-4 border-b border-outline-variant pb-2">Categories</h3>
+<div class="space-y-2">
+<label class="flex items-center gap-3 py-2 cursor-pointer group">
+<input checked="" class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Switchgear Systems</span>
+</label>
+<label class="flex items-center gap-3 py-2 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Industrial Cables</span>
+</label>
+<label class="flex items-center gap-3 py-2 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Automation & Control</span>
+</label>
+<label class="flex items-center gap-3 py-2 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Transformers</span>
+</label>
+<label class="flex items-center gap-3 py-2 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Safety Gear</span>
+</label>
+</div>
+</div>
+<div>
+<h3 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-4 border-b border-outline-variant pb-2">Manufacturer</h3>
+<select class="w-full h-11 border-outline-variant bg-surface focus:border-primary focus:ring-0 font-body-md">
+<option>All Manufacturers</option>
+<option>Siemens</option>
+<option>ABB</option>
+<option>Schneider Electric</option>
+<option>Havells</option>
+</select>
+</div>
+<div class="p-6 bg-primary-container text-on-primary-fixed rounded shadow-sm">
+<h4 class="font-headline-sm text-headline-sm mb-2">Bulk Orders</h4>
+<p class="font-body-md text-on-primary-fixed-variant mb-4">Need a custom procurement list for your facility?</p>
+<button class="w-full py-2 bg-on-primary text-primary font-bold font-label-md uppercase tracking-wider hover:bg-surface-container-high transition-colors">
+                                Contact Expert
+                            </button>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-grow">
+<div class="flex justify-between items-center mb-8">
+<span class="font-label-md text-secondary uppercase">Showing 24 of 1,280 Products</span>
+<div class="flex gap-4">
+<button class="flex items-center gap-2 font-label-md text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">sort</span>
+                                Relevance
+                            </button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product Item 1 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant p-1 transition-all hover:border-primary">
+<div class="aspect-square bg-surface-container-low overflow-hidden relative">
+<img class="product-image w-full h-full object-cover transition-transform duration-500" data-alt="High-resolution industrial studio photograph of a sophisticated heavy-duty electrical switchgear unit. The product is shot from a sharp 45-degree angle under cold, crisp professional lighting that highlights the metallic textures and precise engineering details. The background is a clean, neutral industrial grey with subtle shadows that emphasize the solid build quality of the machinery. The aesthetic is clean and corporate modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6douLMGl5AKaWp-rBogZ2piwKwWFHa1tSSVXxR-FAXdQIEYJz1CJRaq5CCCXkpTQGbYv6eC3HNowJ8m69EoY2SPHqIGMHWv8f1M3kOXe2V9kaUfoW1c1hCRNLlrTyU_weZMPDdvRQJK6sZnYKNVbd0Q28JNuXpU3WHzVhvffJK_1Mw8KaryWvwkryxaASBrdC2zh17RC0m9GsBBY0qFcjuXcp4XbqZTSWdp6hgk3sgb3X_a1mmP_cdk7it8nlHQhOkm--dDZ60wZs"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 font-label-sm text-label-sm uppercase">In Stock</span>
+</div>
+<div class="p-6">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-outline mb-2">Switchgear Systems</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Delta-P High Voltage Switch</h3>
+<p class="font-body-md text-secondary mb-6 text-sm">Industrial grade 12kV air-insulated switchgear for power distribution.</p>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-primary">SKU-4829</span>
+<button class="px-4 py-2 border border-primary text-primary font-bold font-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-all">
+                                        Enquire Now
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Item 2 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant p-1 transition-all hover:border-primary">
+<div class="aspect-square bg-surface-container-low overflow-hidden relative">
+<img class="product-image w-full h-full object-cover transition-transform duration-500" data-alt="A clean, technical close-up photograph of thick high-performance industrial armored power cables. The cross-section reveals meticulous layering of insulation and copper conductor strands, highlighted by focused studio lighting. The setting is a minimalist professional industrial space, emphasizing precision and durability. The color palette is composed of metallic copper tones against cool greys and deep blacks, evoking corporate reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2y44d2HqzTHt7hO0BhiykOjHh_ZXiNDJacsdNIkqSpyWlmpnUfYFdBqIKj5vzlw-uD_Plw-YMiEZKjr8w6F7Fu4dmZyhfWfMn5hb7RhLjad1gMLvY1EswEFojxCV9XTIe4QYVA1iTSUF_DHIjQ1v9t_X9IOWDQ_p31wDsKZMI3f28heNWKKbs_gQcaiwNR4PKMSDFgp94mgceI0VqkCUq5BWn8gjSaueItl601jbsX5P_sVVVBdFqOZ7M-RzOM7Jjw6A5VYL9JQEs"/>
+<span class="absolute top-4 left-4 bg-secondary text-on-secondary px-3 py-1 font-label-sm text-label-sm uppercase">Custom Order</span>
+</div>
+<div class="p-6">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-outline mb-2">Industrial Cables</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">TitanXL Armored Power Cable</h3>
+<p class="font-body-md text-secondary mb-6 text-sm">Triple-core PVC insulated steel wire armored cable for heavy terrain.</p>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-primary">SKU-9901</span>
+<button class="px-4 py-2 border border-primary text-primary font-bold font-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-all">
+                                        Enquire Now
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Item 3 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant p-1 transition-all hover:border-primary">
+<div class="aspect-square bg-surface-container-low overflow-hidden relative">
+<img class="product-image w-full h-full object-cover transition-transform duration-500" data-alt="A macro studio shot of an advanced industrial PLC automation control module. The focus is on the high-quality interface ports and diagnostic LED indicators. The lighting is soft and ambient with a slight blue tint, suggesting a high-tech control room environment. The composition is clean and organized, aligning with a professional engineering catalog aesthetic. Precise textures of the durable plastic and metal housing are clearly visible." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPMDValtUeGAdexI1CvTwxpWAX6nmkj0ZOMFzneisi6ZbYfkXJGjteM31h-KG27sU8PzBG-nPIxjciOwkQgDH4Ft0idfemQGfJUbR3mtkDD3jFTZWv1QVbgNT7tuPnEAB8LQJqfJMH8r7xWFGXFuyb1VK1KrNw4r_3EksSuDnmiAxRt0sFEdtt403fCEn1Gjb_bPG6gXjOCNzd7tqImPHcQ7-lXtI5TJGp85BFMKqdAF_YQdJ8_RuENDGu0u5zuF6S7t02qmhB2sWB"/>
+</div>
+<div class="p-6">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-outline mb-2">Automation</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">OmniControl PLC Module</h3>
+<p class="font-body-md text-secondary mb-6 text-sm">Programmable logic controller for complex assembly line synchronisation.</p>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-primary">SKU-1120</span>
+<button class="px-4 py-2 border border-primary text-primary font-bold font-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-all">
+                                        Enquire Now
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Item 4 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant p-1 transition-all hover:border-primary">
+<div class="aspect-square bg-surface-container-low overflow-hidden relative">
+<img class="product-image w-full h-full object-cover transition-transform duration-500" data-alt="An industrial-grade 3-phase power transformer shot in a bright, modern factory setting. The lighting is even and detailed, capturing the cooling fins and heavy ceramic insulators of the unit. The background is a clean warehouse floor with soft focus, keeping all attention on the engineering of the transformer. The mood is one of immense power and technical sophistication, using a palette of industrial blue and grey." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA64vgcJBL5aXiDNA3vvnNFbs5iC3LymZL7hOaz8FYNK5iRg1JB0EGtpjGa_lMox0MdLTyZba5Zr-u4RW0Xeu_eKaI3DfapIxSQ2bojaVvWDHdYzK-8HJnCD1HyW9NPVuxw2Pk64WP9zlzbZZcuvjUV7-w6iOjy1brshYx2HGXwp9076DdyFC0it6gm_HFZ9F6C0Jl85Z4mvhmlL1cKF84ylTCnBybOJg9t1rTKOlwr8LbrMds7KsQn-87sGDyP41KoP4FiRo_n31bS"/>
+</div>
+<div class="p-6">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-outline mb-2">Transformers</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">CoreX-500 Distribution Unit</h3>
+<p class="font-body-md text-secondary mb-6 text-sm">Outdoor oil-immersed 3-phase distribution transformer (500kVA).</p>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-primary">SKU-2274</span>
+<button class="px-4 py-2 border border-primary text-primary font-bold font-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-all">
+                                        Enquire Now
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Item 5 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant p-1 transition-all hover:border-primary">
+<div class="aspect-square bg-surface-container-low overflow-hidden relative">
+<img class="product-image w-full h-full object-cover transition-transform duration-500" data-alt="A technical studio photograph of a heavy-duty industrial circuit breaker. The lighting is designed to show every switch position and label with extreme clarity. The metallic and matte plastic surfaces reflect a professional, enterprise-grade build quality. Shot against a white backdrop for a digital catalog feel, the image emphasizes safety, precision, and the authoritative nature of the industrial component." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpifRIJMzXFVTBP1Co2_oaYKmOG8HEYjQnjRsvhU7D8AIKF4lOTxbWm7uifVlqriOswshqy_e8VIk4Str3-Kh-aP3lJUADf6vdcQ-yZ5ifVFKup9FzAwMvn38e8jiSNMU46FEU4Kd-ZT-2HnQFL35u5aOl5s45yMLQmQnUsermZ6YDsgRaYm-G2GRm9QujMTziXff6Och0w_mW0UHgVea6YiR-6_eUPOANf0toONmpqItL1-pkb_HA8_mujQVXuVPh88GSkvR_yq-K"/>
+</div>
+<div class="p-6">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-outline mb-2">Switchgear Systems</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Vanguard MCCB 630A</h3>
+<p class="font-body-md text-secondary mb-6 text-sm">Molded case circuit breaker for high-capacity industrial panels.</p>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-primary">SKU-3115</span>
+<button class="px-4 py-2 border border-primary text-primary font-bold font-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-all">
+                                        Enquire Now
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Item 6 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant p-1 transition-all hover:border-primary">
+<div class="aspect-square bg-surface-container-low overflow-hidden relative">
+<img class="product-image w-full h-full object-cover transition-transform duration-500" data-alt="A close-up photograph of high-torque industrial motor components and sensors. The image captures the fine mechanical details and polished surfaces under bright laboratory-style lighting. The environment is impeccably clean and technical, echoing the principles of industrial modernism. The visual weight is solid and grounded, featuring a color scheme of steel, graphite, and subtle indicator lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcTcnzpZVp22O-NuM2z9jilaD8o-zGg32570OQvyxv-hR6NgN0OVwUQsXpmwLB2LlOwG6_Y2quyMRQDvcADjb_RpXf-FugmEtFtqNGXR-vuY5zITS7tuQs7ImdBtueyB8r4JRbmct3tBGcTVuuvRy-3s8TC-kQA1LX6SB2cSn4A12w3cMv2k6we-t0O0lRzwTpuubQAYqVSaSiVf8RXy8Hf_0UAqnHOvEynlIlXXULh_D9pbJH73_smuuT7uQJbxkBVbRjnkNnexAa"/>
+</div>
+<div class="p-6">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-outline mb-2">Automation</p>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">SyncroDrive Servo System</h3>
+<p class="font-body-md text-secondary mb-6 text-sm">High-precision motion control servo drive for robotic applications.</p>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-primary">SKU-8820</span>
+<button class="px-4 py-2 border border-primary text-primary font-bold font-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-all">
+                                        Enquire Now
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex justify-center items-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center bg-primary text-on-primary font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:bg-surface-container-low transition-all">2</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:bg-surface-container-low transition-all">3</button>
+<span class="px-2">...</span>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:bg-surface-container-low transition-all">42</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Detail View Layout (Bento Style) -->
+<section class="bg-surface-container-lowest border-y border-outline-variant py-20">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="flex flex-col lg:flex-row gap-16">
+<!-- Product Showcase -->
+<div class="flex-1 space-y-gutter">
+<div class="bg-surface-container-low aspect-video relative group border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A wide-angle, cinematic photograph of a flagship industrial control panel system in operation. The setting is a clean, state-of-the-art power plant control room with soft ambient blue lighting. The equipment is shown with glowing digital displays and precise physical switches. The aesthetic is authoritative and modern, emphasizing scale and high-performance engineering. Every surface is pristine, reflecting an environment of unwavering trust and reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXWPbdXxCcPqG9joo7TCFh6QT1es1LnFHQ5Phxt1W9jxqMifNXLKIYREaEr2xalWpptdHaQLsM90epzE5jToyZDQiqjuPR3QRMorzo-JEON7goV32jL96_OikUSGXhG6hLSbC6XPDnFQmpYshdqqsesK3NOGu0S4ltAJAFXn2k3vSfbYK96Uicf0fFn-pOKD9RXn5AdYI2cYzcSs36j6X4ZYYXnM-R87gzrrsxgDCPcjIWVYEzA4AOGbkqDkRVxGbs0NChBWzQUTup"/>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-primary/20 backdrop-blur-[2px] cursor-zoom-in">
+<span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square bg-surface border border-primary p-1">
+<img class="w-full h-full object-cover opacity-50" data-alt="Close-up technical detail of electrical terminals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0bwCTF9lUHU4DkzjEe7u6af62RWA_2jBpJw--6p4sFhtKEzDILP96HJaqZAgf8h_fZIHEe61GE5VWMabDMw_ygcnbd5u-C7VAoFq6h15_IbloyDy6hLnuEdpPXzXLY3bJYpIjyIRhwbvrsltDMWczHzACa2So0sa4zZG8I5ZH_KHC_UANlOJX3ssCCJdW9LkmfYeEfHY21QiRe1REbnOoQhxuDUlcb2IPGjbbCmlFLa1HTPgL74MnhFBvLWrdihVLqmEApNI63z8U"/>
+</div>
+<div class="aspect-square bg-surface border border-outline-variant p-1">
+<img class="w-full h-full object-cover" data-alt="Technical schematic diagram on a high-res display." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNdoR5wi-oSkD3kedtGRE2GDAXWVdQtqtq7s6PgeEKr_00q142logRdKvq0w-KJzZ-USPfYb8ZMEEE12zJoEG81CqRTqBSViv20H_bfXZM4jBjK2c0fW9JCO3Djuw5qAjdVLrg6GeXgQTcAgh0xDDmIxNwWyyg4hzPpR939NEoyb3FpjE3UeszCpkhIjUMigsN0vN8iOaNVQ81oooxy6IhROUd-lnOC5d7_Oa47mLLzu6qL8QNdTQQghvByh22jDzqbisfzPfDu3fL"/>
+</div>
+<div class="aspect-square bg-surface border border-outline-variant p-1">
+<img class="w-full h-full object-cover" data-alt="Macro shot of circuit protection component." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL9Eslu5CCX3s71jkLtrS0RwLNiyhCRoRz8HaC3kRa9aAVDbxpwdKuM3h6ch7di13M3bOKpsx0IYmPmnNREv-R-8N69-Habf4kjnqNzu6tD_zPH_53YxLcoPx8Ra63CJ7IAGmoFnfSR51LlLPyrSL0yZT7y94mO3VgrK2w88-zAOytnjSk0KSwy5Hiwa2pt_Jk6oo8HEXe0XK68BRs4UFoV2hULBZ1F7y_RfwDJVGBWeRB-PW9WiSM4_ZEtqU1q2hcsIBVYV0YAyOi"/>
+</div>
+<div class="aspect-square bg-surface border border-outline-variant p-1">
+<img class="w-full h-full object-cover" data-alt="Industrial installation scene background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF04Cpjjsc8u1FTf1CB1-gdBp-eVMOj8E_8F4lJNEnLyr-XxEOtmrGpIBqpj1TVzN3XBPD-09aWxv40PSAsTGt_RNd049rDbiKIWHWaCZL-FabB-S_xjM1c5pJtlOhHKhbFdxisZukm5nWsv0-ixDTDBCFbuB2CkG7UGbnV_B3bS9HzYY8K2WtjGVqQhflBnCzvUHIZxbg-rhkfNPF2WjJcMb1QmWoIVAhcD6BRWSIP4rI2-9oIZG-rMqQHGjvro7gsqUdjxa38EHl"/>
+</div>
+</div>
+</div>
+<!-- Technical Specs -->
+<div class="flex-1">
+<span class="bg-primary-container text-on-primary-fixed px-3 py-1 font-label-sm text-label-sm uppercase mb-4 inline-block">Flagship Series</span>
+<h2 class="font-display-lg text-display-lg text-primary mb-2">PrimeVault Master Panel-G3</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-8 leading-relaxed">The ultimate power distribution and monitoring solution for enterprise-scale industrial complexes. Built with Grade-A flame-retardant composites and integrated IoT diagnostics.</p>
+<div class="space-y-6 mb-12">
+<div class="grid grid-cols-2 gap-y-4 border-t border-outline-variant pt-6">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-outline">Voltage Rating</p>
+<p class="font-headline-sm text-primary">11kV / 22kV / 33kV</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase text-outline">Protection Level</p>
+<p class="font-headline-sm text-primary">IP54 / IP65</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase text-outline">Material</p>
+<p class="font-headline-sm text-primary">Galvanized Steel</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase text-outline">Compliance</p>
+<p class="font-headline-sm text-primary">IEC 61439-1</p>
+</div>
+</div>
+<div class="bg-surface-container p-6 border-l-4 border-primary">
+<h4 class="font-label-md text-label-md uppercase font-bold text-primary mb-2">Key Features</h4>
+<ul class="space-y-2">
+<li class="flex items-center gap-3 font-body-md text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                                        Real-time thermal monitoring system
+                                    </li>
+<li class="flex items-center gap-3 font-body-md text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                                        Modular expansion slots for future-proofing
+                                    </li>
+<li class="flex items-center gap-3 font-body-md text-secondary">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                                        Anti-corrosive powder coating finish
+                                    </li>
+</ul>
+</div>
+</div>
+<!-- Dual CTA Section -->
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex-1 h-14 bg-primary text-on-primary font-bold font-label-md uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined">description</span>
+                                Request Quotation
+                            </button>
+<button class="flex-1 h-14 border-2 border-[#25D366] text-[#25D366] font-bold font-label-md uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-[#25D366] hover:text-white transition-all">
+<span class="material-symbols-outlined">chat</span>
+                                WhatsApp Expert
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-max-width mx-auto">
+<div class="space-y-6">
+<div class="font-headline-sm text-headline-sm font-bold text-on-primary">JK Industrial</div>
+<p class="font-body-md text-on-primary/80">Premium industrial solutions for large-scale infrastructure and manufacturing excellence. Trusted by global leaders since 1994.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center bg-on-primary/10 hover:bg-on-primary/20 transition-all rounded" href="#">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center bg-on-primary/10 hover:bg-on-primary/20 transition-all rounded" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase font-bold tracking-widest mb-8">Navigation</h4>
+<nav class="flex flex-col gap-4">
+<a class="text-on-primary/80 hover:text-on-primary hover:translate-x-1 transition-transform font-body-md" href="#">Home</a>
+<a class="text-on-primary/80 hover:text-on-primary hover:translate-x-1 transition-transform font-body-md" href="#">About Us</a>
+<a class="text-on-primary font-bold hover:translate-x-1 transition-transform font-body-md" href="#">Products</a>
+<a class="text-on-primary/80 hover:text-on-primary hover:translate-x-1 transition-transform font-body-md" href="#">Industries Served</a>
+</nav>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase font-bold tracking-widest mb-8">Resources</h4>
+<nav class="flex flex-col gap-4">
+<a class="text-on-primary/80 hover:text-on-primary hover:translate-x-1 transition-transform font-body-md" href="#">Technical Support</a>
+<a class="text-on-primary/80 hover:text-on-primary hover:translate-x-1 transition-transform font-body-md" href="#">Privacy Policy</a>
+<a class="text-on-primary/80 hover:text-on-primary hover:translate-x-1 transition-transform font-body-md" href="#">Terms of Service</a>
+<a class="text-on-primary/80 hover:text-on-primary hover:translate-x-1 transition-transform font-body-md" href="#">Contact Us</a>
+</nav>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase font-bold tracking-widest mb-8">Contact Info</h4>
+<div class="space-y-4 font-body-md text-on-primary/80">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[20px] mt-1">location_on</span>
+<span>12/A Industrial Estate, South Sector, Corporate City, 560001</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>+91 80 4455 6677</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+<span>procurement@jkindustrial.com</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-margin-desktop mt-20 pt-8 border-t border-on-primary/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-on-primary/60">© 2024 JK Industrial Enterprise. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="font-label-sm text-on-primary/40 uppercase">ISO 9001:2015 Certified</span>
+<span class="font-label-sm text-on-primary/40 uppercase">Safe & Secure Procurement</span>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and UI Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const productCards = document.querySelectorAll('.product-card');
+            
+            // Subtle intersection observer for reveal effect
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            productCards.forEach(card => {
+                card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(card);
+            });
+
+            // Sticky Header Scroll State
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('bg-surface-container-lowest/90', 'backdrop-blur-md');
+                } else {
+                    header.classList.remove('bg-surface-container-lowest/90', 'backdrop-blur-md');
+                }
+            });
+        });
+    </script>
+</body></html>

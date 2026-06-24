@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ind-001",
+    "name": "Manufacturing",
+    "slug": "manufacturing",
+    "icon": "factory",
+    "description": "Comprehensive electrical solutions for heavy and light manufacturing facilities."
+  },
+  {
+    "id": "ind-002",
+    "name": "Construction",
+    "slug": "construction",
+    "icon": "building",
+    "description": "Robust power distribution and safety equipment for commercial and residential construction."
+  },
+  {
+    "id": "ind-003",
+    "name": "Infrastructure",
+    "slug": "infrastructure",
+    "icon": "bridge",
+    "description": "High-capacity electrical infrastructure for national and regional development projects."
+  },
+  {
+    "id": "ind-004",
+    "name": "Industrial Plants",
+    "slug": "industrial-plants",
+    "icon": "power-plant",
+    "description": "Specialized control and automation systems for process and energy plants."
+  }
+]

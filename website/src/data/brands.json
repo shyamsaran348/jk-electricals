@@ -1,0 +1,44 @@
+[
+  {
+    "id": "brd-001",
+    "name": "Schneider Electric",
+    "slug": "schneider",
+    "logo": "SCHNEIDER",
+    "description": "Global specialist in energy management and automation."
+  },
+  {
+    "id": "brd-002",
+    "name": "Siemens",
+    "slug": "siemens",
+    "logo": "SIEMENS",
+    "description": "Technology company focused on industry, infrastructure, transport, and healthcare."
+  },
+  {
+    "id": "brd-003",
+    "name": "ABB",
+    "slug": "abb",
+    "logo": "ABB",
+    "description": "Leading global technology company that energizes the transformation of society."
+  },
+  {
+    "id": "brd-004",
+    "name": "Larsen & Toubro",
+    "slug": "lnt",
+    "logo": "L&T",
+    "description": "Indian multinational conglomerate with interests in engineering, construction, and manufacturing."
+  },
+  {
+    "id": "brd-005",
+    "name": "Polycab",
+    "slug": "polycab",
+    "logo": "POLYCAB",
+    "description": "India's leading manufacturer of cables and wires."
+  },
+  {
+    "id": "brd-006",
+    "name": "Havells",
+    "slug": "havells",
+    "logo": "HAVELLS",
+    "description": "Leading Fast Moving Electrical Goods (FMEG) Company with a strong global presence."
+  }
+]

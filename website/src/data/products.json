@@ -1,0 +1,195 @@
+[
+  {
+    "id": "prd-001",
+    "name": "ABB Tmax T4 Molded Case Circuit Breaker",
+    "slug": "abb-tmax-t4-mccb",
+    "category": "Switchgear",
+    "brand": "ABB",
+    "image": "/products/abb_mccb.png",
+    "description": "High-performance molded case circuit breaker designed for advanced power distribution and protection in industrial environments.",
+    "features": [
+      "Current rating up to 250A",
+      "High breaking capacity",
+      "Advanced electronic trip units",
+      "Compact dimensions"
+    ],
+    "isNewArrival": true,
+    "isFeatured": true
+  },
+  {
+    "id": "prd-002",
+    "name": "XLPE Insulated Armored Power Cable (3-Core)",
+    "slug": "xlpe-armored-power-cable",
+    "category": "Cables",
+    "brand": "Polycab",
+    "image": "/products/armored_cable.png",
+    "description": "Heavy-duty armored power cable suitable for underground and industrial installations requiring high mechanical protection.",
+    "features": [
+      "Cross-linked polyethylene insulation",
+      "Galvanized steel wire armor",
+      "High thermal capacity",
+      "Excellent resistance to moisture"
+    ],
+    "isNewArrival": false,
+    "isFeatured": true
+  },
+  {
+    "id": "prd-003",
+    "name": "Siemens SIMATIC S7-1200 Controller",
+    "slug": "siemens-simatic-s7-1200",
+    "category": "Automation & Control",
+    "brand": "Siemens",
+    "image": "/products/siemens_plc.png",
+    "description": "Compact, modular PLC for comprehensive automation solutions in manufacturing and process industries.",
+    "features": [
+      "Integrated PROFINET interface",
+      "Powerful integrated technology functions",
+      "Flexible and scalable design",
+      "High-speed counting and measuring"
+    ],
+    "isNewArrival": false,
+    "isFeatured": true
+  },
+  {
+    "id": "prd-004",
+    "name": "Schneider Electric Acti9 Miniature Circuit Breaker",
+    "slug": "schneider-acti9-mcb",
+    "category": "Switchgear",
+    "brand": "Schneider",
+    "image": "/products/schneider_mcb.png",
+    "description": "Industry-standard DIN rail mounted miniature circuit breaker for ultimate safety and continuity of service.",
+    "features": [
+      "VisiSafe technology for secure maintenance",
+      "Class-2 front face insulation",
+      "Fast closing mechanism",
+      "100% coordination with Acti9 RCCBs"
+    ],
+    "isNewArrival": false,
+    "isFeatured": false
+  },
+  {
+    "id": "prd-005",
+    "name": "Omron MY2N General Purpose Relay",
+    "slug": "omron-my2n-relay",
+    "category": "Relay & Socket",
+    "brand": "Omron",
+    "image": "/products/omron_relay.png",
+    "description": "Highly reliable general purpose relay suitable for a wide variety of industrial automation and control applications.",
+    "features": [
+      "DPDT contact configuration",
+      "Built-in LED indicator",
+      "High contact reliability",
+      "Easy mounting mechanism"
+    ],
+    "isNewArrival": true,
+    "isFeatured": false
+  },
+  {
+    "id": "prd-006",
+    "name": "Fuji Electric Frenic-Mini Inverter",
+    "slug": "fuji-frenic-mini-inverter",
+    "category": "Automation & Control",
+    "brand": "Fuji Electric",
+    "image": "/products/fuji_inverter.png",
+    "description": "Compact and highly functional inverter for various applications.",
+    "features": ["High performance", "Energy saving", "Easy operation"],
+    "isNewArrival": false,
+    "isFeatured": true
+  },
+  {
+    "id": "prd-007",
+    "name": "Rexnord High-Speed Cooling Fan",
+    "slug": "rexnord-cooling-fan",
+    "category": "Cooling Fan",
+    "brand": "Rexnord",
+    "image": "/products/cooling_fan.png",
+    "description": "Industrial grade cooling fan for panel enclosures.",
+    "features": ["Low noise", "High airflow", "Long life bearing"],
+    "isNewArrival": true,
+    "isFeatured": false
+  },
+  {
+    "id": "prd-008",
+    "name": "Spectrum LED High Bay Light",
+    "slug": "spectrum-led-high-bay",
+    "category": "Industrial LED Lights",
+    "brand": "Spectrum",
+    "image": "/products/led_high_bay.png",
+    "description": "Energy efficient high bay lighting for warehouses and factories.",
+    "features": ["IP65 rated", "150W output", "50,000 hours life"],
+    "isNewArrival": false,
+    "isFeatured": true
+  },
+  {
+    "id": "prd-009",
+    "name": "BN Industrial LED Floodlight",
+    "slug": "bn-industrial-led-floodlight",
+    "category": "Industrial LED Lights",
+    "brand": "BN",
+    "image": "/products/bn_led.png",
+    "description": "High power industrial LED floodlight for large area illumination.",
+    "features": ["Waterproof", "High lumen output", "Durable casing"],
+    "isNewArrival": true,
+    "isFeatured": false
+  },
+  {
+    "id": "prd-010",
+    "name": "Hilcool Cabinet Cooling Fan",
+    "slug": "hilcool-cabinet-fan",
+    "category": "Cooling Fan",
+    "brand": "Hilcool",
+    "image": "/products/hilcool_fan.png",
+    "description": "Efficient cooling fan specifically designed for electrical cabinets and enclosures.",
+    "features": ["Compact design", "Low power consumption", "Reliable airflow"],
+    "isNewArrival": false,
+    "isFeatured": false
+  },
+  {
+    "id": "prd-011",
+    "name": "Heavy Duty Flame Proof Junction Box",
+    "slug": "flameproof-junction-box",
+    "category": "Flame Proof Products",
+    "brand": "Schneider",
+    "image": "/products/flameproof_box.png",
+    "description": "Cast iron explosion-proof junction box for hazardous industrial environments.",
+    "features": ["Explosion proof", "Cast iron body", "IP66 rated"],
+    "isNewArrival": true,
+    "isFeatured": true
+  },
+  {
+    "id": "prd-012",
+    "name": "Omron Inductive Proximity Sensor",
+    "slug": "omron-proximity-sensor",
+    "category": "Industrial Sensors",
+    "brand": "Omron",
+    "image": "/products/omron_sensor.png",
+    "description": "High-precision inductive proximity sensor for automated machinery.",
+    "features": ["Non-contact detection", "Fast response time", "Robust housing"],
+    "isNewArrival": false,
+    "isFeatured": true
+  },
+  {
+    "id": "prd-013",
+    "name": "DIN Rail Terminal Blocks",
+    "slug": "din-rail-terminal-blocks",
+    "category": "Panel Accessories",
+    "brand": "ABB",
+    "image": "/products/terminal_blocks.png",
+    "description": "Modular terminal blocks for secure and organized panel wiring.",
+    "features": ["Easy DIN rail mounting", "High connectivity", "Color coded"],
+    "isNewArrival": false,
+    "isFeatured": false
+  },
+  {
+    "id": "prd-014",
+    "name": "Siemens Heavy Duty Power Contactor",
+    "slug": "siemens-power-contactor",
+    "category": "Industrial Components",
+    "brand": "Siemens",
+    "image": "/products/siemens_contactor.png",
+    "description": "Reliable 3-pole power contactor for heavy-duty industrial switching.",
+    "features": ["High electrical endurance", "Compact size", "Easy coil replacement"],
+    "isNewArrival": true,
+    "isFeatured": true
+  }
+]

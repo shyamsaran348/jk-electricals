@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | JK Industrial Enterprise</title>
+<meta content="Learn about the legacy, mission, and infrastructure of JK Industrial Enterprise, a leader in industrial engineering solutions." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .timeline-line {
+            background: linear-gradient(to bottom, transparent, #0056B3 15%, #0056B3 85%, transparent);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid #E2E8F0;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#d7dadc",
+                    "inverse-on-surface": "#eef1f3",
+                    "primary-fixed": "#d9e2ff",
+                    "outline": "#75777f",
+                    "on-surface-variant": "#44464e",
+                    "surface": "#f7fafc",
+                    "on-secondary-container": "#586377",
+                    "inverse-primary": "#b4c6f4",
+                    "surface-variant": "#e0e3e5",
+                    "tertiary": "#00081c",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#acc7ff",
+                    "background": "#f7fafc",
+                    "on-primary-container": "#7687b2",
+                    "inverse-surface": "#2d3133",
+                    "primary-fixed-dim": "#b4c6f4",
+                    "on-surface": "#181c1e",
+                    "primary": "#00081e",
+                    "secondary-container": "#d5e0f7",
+                    "on-secondary-fixed": "#111c2c",
+                    "surface-container": "#ebeef0",
+                    "surface-container-high": "#e5e9eb",
+                    "surface-container-low": "#f1f4f6",
+                    "on-tertiary-fixed-variant": "#004491",
+                    "on-background": "#181c1e",
+                    "secondary-fixed": "#d8e3fa",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#0a1f44",
+                    "tertiary-fixed": "#d7e2ff",
+                    "on-tertiary-fixed": "#001a40",
+                    "secondary": "#545f72",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#041a3f",
+                    "on-secondary-fixed-variant": "#3c475a",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#34466d",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#001f49",
+                    "surface-container-highest": "#e0e3e5",
+                    "secondary-fixed-dim": "#bcc7dd",
+                    "outline-variant": "#c5c6cf",
+                    "surface-tint": "#4c5e86",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f7fafc",
+                    "on-tertiary-container": "#4d87e6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "max-width": "1440px",
+                    "unit": "4px",
+                    "margin-desktop": "48px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400"}],
+                    "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full bg-surface z-50 border-b border-outline-variant shadow-sm transition-all duration-200 ease-in-out">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">JK Industrial</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary border-b-2 border-primary pb-1" href="#">About Us</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">Products</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">Industries</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">Clients</a>
+</nav>
+<div class="flex items-center space-x-6">
+<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-lg border border-outline-variant">
+<span class="material-symbols-outlined text-secondary mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-40" placeholder="Search..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 font-label-md uppercase tracking-widest hover:bg-primary-container transition-all">Request Quote</button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Header -->
+<section class="relative h-[614px] flex items-center overflow-hidden bg-primary">
+
+<div class="relative z-10 px-margin-desktop max-w-max-width mx-auto w-full">
+<h1 class="font-display-lg text-display-lg text-on-primary max-w-3xl mb-6">About JK Industrial</h1>
+<p class="font-body-lg text-body-lg text-on-primary/80 max-w-xl">Pioneering precision engineering and industrial scale solutions for over three decades.</p>
+</div>
+</section>
+<!-- Overview Section -->
+<section class="py-24 bg-surface">
+<div class="px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-tertiary-fixed-variant mb-4 block">Company Profile</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary mb-8 leading-tight">Setting the Gold Standard in Industrial Infrastructure</h2>
+<p class="font-body-md text-body-md text-secondary mb-6 leading-relaxed">
+                            JK Industrial Enterprise is a multi-disciplinary industrial powerhouse specializing in large-scale manufacturing, logistics optimization, and heavy engineering services. Since our inception, we have focused on one core principle: **Structural Integrity**. Our facilities span over 500,000 square feet, housing state-of-the-art machinery and an elite team of 1,200+ engineers and technicians.
+                        </p>
+<p class="font-body-md text-body-md text-secondary mb-8 leading-relaxed">
+                            We don't just supply equipment; we build the foundations of modern industry. From precision-machined aerospace components to massive structural steel for global shipping hubs, our reach is as vast as our commitment to quality.
+                        </p>
+<div class="flex gap-12 border-t border-outline-variant pt-8">
+<div>
+<div class="font-display-lg text-headline-md text-primary">30+</div>
+<div class="font-label-sm text-label-sm text-secondary uppercase">Years Experience</div>
+</div>
+<div>
+<div class="font-display-lg text-headline-md text-primary">450k</div>
+<div class="font-label-sm text-label-sm text-secondary uppercase">Units Delivered</div>
+</div>
+<div>
+<div class="font-display-lg text-headline-md text-primary">12</div>
+<div class="font-label-sm text-label-sm text-secondary uppercase">Global Hubs</div>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-container/5 rounded-xl scale-95 group-hover:scale-100 transition-transform duration-500"></div>
+<img class="relative w-full h-[500px] object-cover rounded-lg border border-outline-variant shadow-lg" data-alt="A high-angle, wide-angle cinematic photograph of a vast, modern industrial warehouse interior. The space is filled with heavy-duty robotic arms and organized steel structures. Cool blue atmospheric lighting highlights the precision and scale of the facility, maintaining an authoritative and high-trust corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCl3TmE2X40at_T4jqZ7qTr2uG3OzNYT2RW5zsGZlDwS3itOF6i27HCP6RDTtLkk3MwhJcS8qhgMRqJ0dIXu_gWwzhOGANK7iNqjyRKi8cuOaZQHHK2P0-HVM5diSTkuAskzi8z93CqLVlYcT-bNPFHnj5f22bkBgZtzf1t-D-R6bwcXS4S1_dcu0KNKZPPmKOsspmJWLZ8Kje4Hl5q_YIdInGwz7kXjqwdOZCFZwoVM9GEDv9edpvMcWrO79alHBNXfv4MZBdukfh"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="px-margin-desktop max-w-max-width mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-tertiary-fixed-variant mb-4 block">Our Journey</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary">Decades of Excellence</h2>
+</div>
+<div class="relative max-w-4xl mx-auto">
+<!-- Timeline Line -->
+<div class="absolute left-1/2 transform -translate-x-1/2 h-full w-px timeline-line"></div>
+<div class="space-y-16">
+<!-- 1994 -->
+<div class="relative flex items-center justify-between">
+<div class="w-5/12 text-right pr-12">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">1994</h3>
+<p class="text-body-md text-secondary">Inception of JK Industrial as a localized tool and die workshop.</p>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-surface ring-2 ring-primary/20"></div>
+<div class="w-5/12"></div>
+</div>
+<!-- 2005 -->
+<div class="relative flex items-center justify-between">
+<div class="w-5/12"></div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-surface ring-2 ring-primary/20"></div>
+<div class="w-5/12 text-left pl-12">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">2005</h3>
+<p class="text-body-md text-secondary">Acquisition of first major government contract for railway infrastructure components.</p>
+</div>
+</div>
+<!-- 2012 -->
+<div class="relative flex items-center justify-between">
+<div class="w-5/12 text-right pr-12">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">2012</h3>
+<p class="text-body-md text-secondary">Global expansion with offices in Singapore, London, and Munich.</p>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-surface ring-2 ring-primary/20"></div>
+<div class="w-5/12"></div>
+</div>
+<!-- 2024 -->
+<div class="relative flex items-center justify-between">
+<div class="w-5/12"></div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-surface ring-2 ring-primary/20"></div>
+<div class="w-5/12 text-left pl-12">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">2024</h3>
+<p class="text-body-md text-secondary">Inauguration of the 'Nexus' Smart Factory — a fully automated AI-driven production hub.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder Story -->
+<section class="py-24 bg-primary-container text-on-primary">
+<div class="px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5">
+<img class="w-full aspect-[4/5] object-cover rounded-lg shadow-2xl border border-white/10" data-alt="A professional black and white portrait of a senior industrial executive in a tailored suit, standing in a brightly lit architectural space with glass and steel elements. The subject conveys authority, wisdom, and deep industrial experience. The photography style is high-contrast, clean, and corporate modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0y1SutNjUMwFKeZmBP6B2kqf-oxYTBQrXy8rX6yOkT7IycnsjJTApaMTpUvqQmXSl_crAz3Mpg-MtFSrx2e9Xy_QCy840sh6rgPZ0mtVNMfcOwtgqKjZyxHnVRn3uJWUuBh7_B5iNvntEcnB1tUqDMdZSo1Z3zgVeVQJFT3G-cGoWS36my9od6R4RJDSbqRflS-wF4h3YRaDzrfaJld_UcYtvfBOVHHkglSysXxqU5ZuVT4hBY_22xuq_HfPgPdVsFhr4MmaIeJFi"/>
+</div>
+<div class="lg:col-span-7 lg:pl-12">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary-fixed mb-6 block">From the Founder's Desk</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md mb-8 leading-tight">"Precision is not just a measurement; it is a promise of reliability."</h2>
+<div class="space-y-6 font-body-md text-body-md text-on-primary/80 leading-relaxed">
+<p>When I founded JK Industrial in a small rented warehouse three decades ago, the goal was simple: solve problems that others found too complex. We started with specialized turbine parts, focusing on tolerances that competitors deemed impossible.</p>
+<p>Today, as we navigate the fourth industrial revolution, that same obsession with the 'impossible' drives us. We've scaled from a workshop to a global conglomerate, but the heartbeat of this company remains rooted in engineering integrity. We don't just ship products; we ship confidence.</p>
+</div>
+<div class="mt-12">
+<p class="font-headline-sm text-headline-sm mb-1">Julian K. Sterling</p>
+<p class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Founder &amp; Executive Chairman</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision & Mission -->
+<section class="py-24 bg-surface">
+<div class="px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="p-12 bg-white border border-outline-variant hover:border-primary transition-colors group">
+<div class="w-16 h-16 bg-surface-container-low flex items-center justify-center mb-8 group-hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary transition-all">visibility</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Our Vision</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            To be the undisputed global cornerstone of industrial advancement, where our engineering solutions empower every major sector to achieve peak operational performance with zero compromise on safety or sustainability.
+                        </p>
+</div>
+<div class="p-12 bg-white border border-outline-variant hover:border-primary transition-colors group">
+<div class="w-16 h-16 bg-surface-container-low flex items-center justify-center mb-8 group-hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-primary text-4xl group-hover:text-on-primary transition-all">rocket_launch</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Our Mission</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            We deliver mission-critical components and infrastructure through rigorous engineering, transparent supply chains, and continuous technological innovation, ensuring our partners remain resilient in an ever-evolving market.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="px-margin-desktop max-w-max-width mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-tertiary-fixed-variant mb-4 block">What Guides Us</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary">Our Core Values</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Value 1 -->
+<div class="p-8 border border-outline-variant bg-white">
+<span class="material-symbols-outlined text-primary mb-4 block" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-4">Unyielding Precision</h4>
+<p class="text-body-md text-secondary">Every millimeter matters. We maintain industry-leading tolerances across all manufacturing verticals.</p>
+</div>
+<!-- Value 2 -->
+<div class="p-8 border border-outline-variant bg-white">
+<span class="material-symbols-outlined text-primary mb-4 block" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-4">Total Integrity</h4>
+<p class="text-body-md text-secondary">Radical transparency in our sourcing, reporting, and client communications is non-negotiable.</p>
+</div>
+<!-- Value 3 -->
+<div class="p-8 border border-outline-variant bg-white">
+<span class="material-symbols-outlined text-primary mb-4 block" style="font-variation-settings: 'FILL' 1;">eco</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-4">Future Readiness</h4>
+<p class="text-body-md text-secondary">Integrating sustainable practices and green energy solutions into heavy industrial processes.</p>
+</div>
+<!-- Value 4 -->
+<div class="p-8 border border-outline-variant bg-white">
+<span class="material-symbols-outlined text-primary mb-4 block" style="font-variation-settings: 'FILL' 1;">groups</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-4">Human Capital</h4>
+<p class="text-body-md text-secondary">Investing in the relentless training and safety of our global workforce of 1,200+ professionals.</p>
+</div>
+<!-- Value 5 -->
+<div class="p-8 border border-outline-variant bg-white">
+<span class="material-symbols-outlined text-primary mb-4 block" style="font-variation-settings: 'FILL' 1;">hub</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-4">Agile Scale</h4>
+<p class="text-body-md text-secondary">The ability to pivot production lines quickly while maintaining enterprise-level scale.</p>
+</div>
+<!-- Value 6 -->
+<div class="p-8 border border-outline-variant bg-white">
+<span class="material-symbols-outlined text-primary mb-4 block" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-4">Accountability</h4>
+<p class="text-body-md text-secondary">We own every outcome, standing firmly behind the performance of our deployed assets.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Infrastructure Gallery -->
+<section class="py-24 bg-surface">
+<div class="px-margin-desktop max-w-max-width mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-tertiary-fixed-variant mb-4 block">World-Class Facilities</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary">Advanced Infrastructure</h2>
+</div>
+<button class="font-label-md text-label-md uppercase tracking-wider text-primary border-b-2 border-primary pb-1">View Tour</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-[800px]">
+<div class="md:col-span-8 group relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sweeping cinematic shot of a massive, ultra-modern industrial campus at dusk. The architecture features sleek glass, dark steel, and sharp angles, illuminated by cool white LED perimeter lighting. The setting is clean, organized, and looks like a futuristic high-tech manufacturing hub, emphasizing authoritative reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmCT8kblZfTQS6tkkZjY10Z1RRi3E1YLBhpASQzy92DqhE1XYq7NafZdwnMUunR-8746rK12JlkViH6rUqZ-wxUb_Nf7vPqijAktF-5iUn0k95rfsy_9_26HSuO-8bp3AFSxtvCZZKPBhByO_MQxuG_yn6bqNx_iVVXMOER0LDsNI4PgK1TxQauk3KE2tZCXDWF_hiWnn5Hlp7vhGZpRMeDBpR4BWLnOuKwNwv4rGqOG7IMMezxhszE9P3eHrtYZTPUmPQYC74yaIK"/>
+<div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-primary/80 to-transparent text-on-primary">
+<p class="font-headline-sm text-headline-sm">Global Headquarters &amp; R&amp;D Hub</p>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="h-1/2 group relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A detailed, close-up shot of an automated robotic assembly line in a sterile, high-tech industrial environment. Sparks fly from a precision weld, captured in high-speed photography. The lighting is dramatic and moody, highlighting the sophisticated machinery and engineering expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7ZgcpNJzBq7UGr2E_io6L-qT4kYisshn_EjPknrLqchrQSnOgZChXY0OwgJQ97VCoBTrp27muzHjpH-nrCqB4YHeaaxE4oSMcXLUGz5XTCVEVpK7SZ3nqPLpKG4OjxPAxSHtTpT7uMJRtYBjM65sOJiW8JBOlF9VoF2oNodIBatG-2NQozGs76NfBpihmBhQu_ZD8HQRsq3Yjo2hD13tnjkFZDFX0MYI8Ud8C6HhnZHJe5bYWAsUbKyo22kZukhQewpup9Oii7-v8"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all"></div>
+</div>
+<div class="h-1/2 group relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wide-angle interior shot of a massive logistical warehouse with perfectly aligned, high-reaching steel racks. Bright, clean industrial lighting fills the space. Forklifts move with precision through the aisles, illustrating efficient, high-scale corporate logistics operations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmrCR9_9VgeGoJGn-z8lqsRjMooIfXA1jhCU8lq52BQHYPM-8ok7hLEMSWF6E3aOKkXJ4aQmOA5nlKeKBVYUnSnpmIbKGcm_kr1YgSTZH4MBDLIKndbz73KEycQ4bMySqktTpj0i4Lq1Uj5fWu6qeX3aGDrGWS8wioSYIpGKr4iv2odQjJMUivZPM_Um5lmhnEvLgrl1f0JcsHx0J29oHJIEJdKsNJ2wnMl9Zfga2_xJqZQex4GgcEm4zTpgQng6qVODvnR36zA2zY"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements -->
+<section class="py-24 bg-surface-container">
+<div class="px-margin-desktop max-w-max-width mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-tertiary-fixed-variant mb-4 block">Proven Performance</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary">Certifications &amp; Awards</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="bg-white p-8 border border-outline-variant text-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+<div class="w-16 h-16 bg-surface-container mx-auto mb-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-primary">ISO 9001:2015</p>
+<p class="text-label-sm text-secondary">Quality Management</p>
+</div>
+<div class="bg-white p-8 border border-outline-variant text-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+<div class="w-16 h-16 bg-surface-container mx-auto mb-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-primary">AS9100D</p>
+<p class="text-label-sm text-secondary">Aerospace Standard</p>
+</div>
+<div class="bg-white p-8 border border-outline-variant text-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+<div class="w-16 h-16 bg-surface-container mx-auto mb-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-primary">ISO 14001</p>
+<p class="text-label-sm text-secondary">Environmental Excellence</p>
+</div>
+<div class="bg-white p-8 border border-outline-variant text-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+<div class="w-16 h-16 bg-surface-container mx-auto mb-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">safety_check</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-primary">OHSAS 18001</p>
+<p class="text-label-sm text-secondary">Safety Certified</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-primary text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-sm text-headline-sm font-bold text-on-primary mb-6">JK Industrial</div>
+<p class="font-body-md text-body-md text-on-primary/70 mb-6 leading-relaxed">
+                    Engineering the future of global industry through precision, scale, and unwavering reliability.
+                </p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all" href="#"><span class="material-symbols-outlined text-sm">groups</span></a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all" href="#"><span class="material-symbols-outlined text-sm">mail</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-on-primary mb-6">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-primary/80 hover:text-on-primary transition-transform hover:translate-x-1 inline-block" href="#">Home</a></li>
+<li><a class="font-body-md text-body-md text-on-primary font-bold" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-primary/80 hover:text-on-primary transition-transform hover:translate-x-1 inline-block" href="#">Products</a></li>
+<li><a class="font-body-md text-body-md text-on-primary/80 hover:text-on-primary transition-transform hover:translate-x-1 inline-block" href="#">Industries Served</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-on-primary mb-6">Connect</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-primary/80 hover:text-on-primary transition-transform hover:translate-x-1 inline-block" href="#">Clients</a></li>
+<li><a class="font-body-md text-body-md text-on-primary/80 hover:text-on-primary transition-transform hover:translate-x-1 inline-block" href="#">Contact Us</a></li>
+<li><a class="font-body-md text-body-md text-on-primary/80 hover:text-on-primary transition-transform hover:translate-x-1 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-primary/80 hover:text-on-primary transition-transform hover:translate-x-1 inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-on-primary mb-6">Newsletter</h4>
+<p class="font-body-md text-body-md text-on-primary/70 mb-4">Stay updated with industrial insights and company news.</p>
+<div class="flex flex-col space-y-4">
+<input class="bg-white/5 border border-white/20 px-4 py-3 text-on-primary placeholder-on-primary/40 focus:ring-1 focus:ring-white/50 outline-none" placeholder="Email Address" type="email"/>
+<button class="bg-on-primary text-primary font-label-md uppercase tracking-widest py-3 hover:bg-surface-dim transition-all">Subscribe</button>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop max-w-max-width mx-auto mt-20 pt-10 border-t border-white/10 text-center">
+<p class="font-label-sm text-label-sm text-on-primary/50">© 2024 JK Industrial Enterprise. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Simple scroll behavior for header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'shadow-md');
+                header.classList.remove('h-20');
+            } else {
+                header.classList.remove('py-2', 'shadow-md');
+                header.classList.add('h-20');
+            }
+        });
+
+        // Micro-interactions for values
+        const valueCards = document.querySelectorAll('.grid > div');
+        valueCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+                card.style.transition = 'all 0.3s ease';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body></html>
