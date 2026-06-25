@@ -12,22 +12,22 @@ import Contact from '../pages/Contact';
 import ProductDetail from '../pages/ProductDetail';
 
 const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="products" element={<Products />} />
-        <Route path="products/:slug" element={<ProductDetail />} />
-        <Route path="brands" element={<Brands />} />
-        <Route path="industries" element={<Industries />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="clients" element={<Clients />} />
-        <Route path="resources" element={<Resources />} />
-        <Route path="contact" element={<Contact />} />
-      </Route>
-    </Routes>
-  );
+ return (
+ <Routes>
+ <Route path="/" element={<Layout />}>
+ <Route index element={<Home />} />
+ <Route path="about" element={<About />} />
+ <Route path="products" element={<Products />} />
+ <Route path="products/:slug" element={<ProductDetail />} />
+ <Route path="brands" element={<Brands />} />
+ <Route path="industries" element={<Industries />} />
+ <Route path="projects" element={<Projects />} />
+ <Route path="clients" element={<Clients />} />
+ <Route path="resources" element={<Resources />} />
+ <Route path="contact" element={<Contact />} />
+ </Route>
+ </Routes>
+ );
 };
 
 export default AppRoutes;
