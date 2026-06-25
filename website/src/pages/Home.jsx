@@ -20,12 +20,12 @@ const Home = () => {
  
  {/* 1. Hero Section */}
  <section className="relative h-[80vh] min-h-[700px] flex items-center overflow-hidden">
- <div className="absolute inset-0 z-0">
+ <div className="absolute inset-0">
  <motion.div 
  className="w-full h-[120%] bg-cover bg-center -mt-[10%]" 
  style={{ backgroundImage: "url('/hero-bg.png')", y }}
  ></motion.div>
- <div className="absolute inset-0 bg-white/85 backdrop-blur-[2px]"></div>
+ <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-surface/20"></div>
  </div>
 
  <div className="relative z-10 container mx-auto w-full">

@@ -5,9 +5,15 @@ const Footer = () => {
  <footer className="bg-forest text-white pt-16 pb-8 border-t-4 border-gold">
  <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
  <div className="space-y-6">
- <Link to="/" className="flex items-center">
- <img src="/logo.png" alt="JK Industrial Impex Logo" className="h-12 brightness-0 invert" />
- </Link>
+            <Link to="/" className="flex items-center gap-3">
+              <div className="h-14 w-8 rounded-sm overflow-hidden shadow-sm flex items-center justify-center shrink-0">
+                <img src="/logo.png" alt="JK Industrial Impex Logo" className="w-full h-full object-cover object-center scale-[1.35]" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-2xl font-black tracking-tight text-white leading-none">J.K Industrial</span>
+                <span className="text-xs font-bold text-gold uppercase tracking-widest mt-1">Impex</span>
+              </div>
+            </Link>
  <p className="text-sm text-gray-300 leading-relaxed">
  J.K Industrial Impex, powering industries with reliable electrical solutions. Authorized distributor of premium engineering products since 2007.
  </p>

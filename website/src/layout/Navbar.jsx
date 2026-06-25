@@ -17,10 +17,16 @@ const Navbar = () => {
  return (
  <nav className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
  <div className="container flex justify-between items-center">
- {/* Logo */}
- <Link to="/" className="flex items-center">
- <img src="/logo.png" alt="JK Industrial Impex Logo" className="h-10" />
- </Link>
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-3">
+          <div className="h-14 w-8 rounded-sm overflow-hidden drop-shadow-sm flex items-center justify-center shrink-0">
+            <img src="/logo.png" alt="JK Industrial Impex Logo" className="w-full h-full object-cover object-center scale-[1.35]" />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-xl lg:text-2xl font-black tracking-tight text-forest leading-none">J.K Industrial</span>
+            <span className="text-[10px] lg:text-xs font-bold text-gold uppercase tracking-widest mt-1">Impex</span>
+          </div>
+        </Link>
 
  {/* Desktop Menu */}
  <div className="hidden lg:flex items-center space-x-8">
