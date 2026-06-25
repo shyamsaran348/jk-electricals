@@ -32,6 +32,9 @@
   .animate-marquee:hover {
     animation-play-state: paused;
   }
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold focus:ring-offset-white;
+  }
 }
 
 @keyframes marquee {

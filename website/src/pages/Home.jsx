@@ -30,29 +30,29 @@ const Home = () => {
 
  <div className="relative z-10 container mx-auto w-full">
  <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={fadeUp} className="max-w-3xl">
- <h1 className="text-display font-black text-forest mb-4 leading-tight tracking-tight">
+ <h1 className="text-display font-black text-forest mb-4 leading-tight tracking-tight drop-shadow-sm">
  J.K Industrial Impex
  </h1>
- <p className="text-xl font-medium text-muted mb-10 max-w-2xl leading-relaxed">
+ <p className="text-2xl font-bold text-slate-700 mb-10 max-w-2xl leading-relaxed">
  Southern India's premium B2B electrical distributor. Fast delivery of quality switchgears, cables, and automation tools.
  </p>
  
- <div className="bg-white p-2 flex items-center mb-8 max-w-2xl shadow-xl rounded-full">
+ <div className="bg-white p-2 flex items-center mb-8 max-w-2xl shadow-xl rounded-full focus-within:ring-2 focus-within:ring-gold focus-within:ring-offset-2">
  <input 
  type="text" 
  placeholder="Search Products, Brands, Categories..." 
- className="bg-transparent border-none text-forest placeholder-gray-400 w-full px-6 py-3 focus:outline-none focus:ring-0 font-medium"
+ className="bg-transparent border-none text-forest placeholder-slate-500 w-full px-6 py-3 focus:outline-none font-medium"
  />
- <button className="bg-gold hover:bg-forest transition-colors text-white px-8 py-3 rounded-full font-bold uppercase tracking-wider text-sm whitespace-nowrap duration-300">
+ <button className="bg-gold hover:bg-forest transition-colors text-forest hover:text-white px-8 py-3 rounded-full font-black uppercase tracking-wider text-sm whitespace-nowrap duration-300 focus-ring">
  Search
  </button>
  </div>
 
  <div className="flex flex-col sm:flex-row gap-4">
- <Link to="/products" className="bg-gold text-white px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-bold hover:bg-forest transition-colors duration-300 shadow-lg">
+ <Link to="/products" className="bg-gold text-forest px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-black hover:bg-forest hover:text-white transition-colors duration-300 shadow-xl focus-ring border-2 border-transparent">
  Explore Catalog
  </Link>
- <Link to="/contact" className="bg-white border border-border text-forest px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-bold hover:border-forest hover:shadow-md transition-all duration-300 shadow-sm">
+ <Link to="/contact" className="bg-transparent border-2 border-forest text-forest px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-bold hover:bg-forest hover:text-white transition-all duration-300 focus-ring">
  Bulk Enquiry
  </Link>
  </div>
@@ -184,31 +184,7 @@ const Home = () => {
  </div>
  </section>
 
- {/* 6. Industries Served */}
- <section className="py-24 bg-white border-b border-border overflow-hidden">
- <div className="container mx-auto max-w-full px-0">
- <div className="text-center mb-16">
- <h2 className="text-h2 font-bold text-forest">Industries We Supply</h2>
- </div>
- 
- <div className="relative flex overflow-hidden group py-4">
- <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-white via-transparent to-white w-full h-full"></div>
- 
- <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused]">
- {[...Array(2)].map((_, i) => (
- <div key={i} className="flex gap-6 px-3 min-w-max">
- {['Manufacturing', 'Infrastructure', 'Oil & Gas', 'Pharmaceuticals', 'Power Plants', 'Automotive', 'Textiles'].map((ind, j) => (
- <div key={j} className="bg-surface p-8 border border-border text-center hover:border-gold transition-colors w-64 flex-shrink-0 rounded-2xl shadow-sm">
- <CheckCircle2 className="mx-auto mb-4 text-gold" size={28} />
- <p className="text-sm font-bold text-forest uppercase">{ind}</p>
- </div>
- ))}
- </div>
- ))}
- </div>
- </div>
- </div>
- </section>
+
 
  {/* 8. Project Highlights (Condensed) */}
  <section className="py-24 bg-surface">

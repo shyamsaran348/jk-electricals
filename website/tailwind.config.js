@@ -24,7 +24,7 @@ export default {
         white: "#FFFFFF",
         surface: "#F7FAFC",
         text: "#1A202C",
-        muted: "#64748B",
+        muted: "#475569",
         border: "#E2E8F0",
       },
       fontFamily: {
