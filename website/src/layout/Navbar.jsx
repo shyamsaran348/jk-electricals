@@ -48,10 +48,10 @@ const Navbar = () => {
  <button className="p-2 text-forest hover:text-gold transition-colors focus-ring rounded-full">
  <Search size={20} />
  </button>
- <a href="/jki_profile.pptx" download className="flex items-center space-x-2 text-sm font-semibold text-forest hover:text-gold transition-colors focus-ring rounded-sm px-1">
+ <Link to="/catalog" className="flex items-center space-x-2 text-sm font-semibold text-forest hover:text-gold transition-colors focus-ring rounded-sm px-1">
  <Download size={16} />
  <span>Catalog</span>
- </a>
+ </Link>
  <Link to="/contact" className="bg-gold text-forest hover:bg-forest hover:text-white px-6 py-2.5 rounded-full shadow-md text-sm font-black transition-all duration-300 focus-ring">
  Get Quote
  </Link>
@@ -75,10 +75,10 @@ const Navbar = () => {
  <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className={`font-semibold text-lg focus-ring rounded-sm px-2 py-1 ${isActive('/contact') ? 'text-gold bg-surface' : 'text-forest'}`}>Contact</Link>
  
  <div className="pt-4 border-t border-border flex flex-col space-y-4">
- <a href="/jki_profile.pptx" download className="flex items-center space-x-2 text-forest font-semibold focus-ring rounded-sm p-2">
+ <Link to="/catalog" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 text-forest font-semibold focus-ring rounded-sm p-2">
  <Download size={20} />
- <span>Download Catalog</span>
- </a>
+ <span>View Catalog</span>
+ </Link>
  <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="bg-gold text-forest px-6 py-3 rounded-full text-center font-black focus-ring hover:bg-forest hover:text-white transition-colors">
  Get Quote
  </Link>

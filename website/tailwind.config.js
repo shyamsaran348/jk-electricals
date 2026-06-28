@@ -19,8 +19,8 @@ export default {
     },
     extend: {
       colors: {
-        forest: "#1D6444",
-        gold: "#D4AF37",
+        forest: "#0C3824",
+        gold: "#F59E0B",
         white: "#FFFFFF",
         surface: "#F7FAFC",
         text: "#1A202C",

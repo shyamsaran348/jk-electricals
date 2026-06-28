@@ -18,50 +18,39 @@ const Home = () => {
  <meta name="description" content="Southern India's premium B2B electrical distributor. Fast delivery of quality switchgears, cables, and automation tools." />
  </Helmet>
  
- {/* 1. Hero Section */}
- <section className="relative h-[80vh] min-h-[700px] flex items-center overflow-hidden">
- <div className="absolute inset-0">
- <motion.div 
- className="w-full h-[120%] bg-cover bg-center -mt-[10%]" 
- style={{ backgroundImage: "url('/hero-bg.png')", y }}
- ></motion.div>
- <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-surface/20"></div>
- </div>
+  {/* 1. Hero Section */}
+  <section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 flex items-center overflow-hidden bg-surface">
+  <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12">
+  <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="w-full lg:w-1/2">
+  <span className="text-sm font-bold text-gold tracking-widest uppercase mb-4 block">Premium B2B Distributor</span>
+  <h1 className="text-display font-black text-forest mb-6 leading-[1.1] tracking-tight">
+  Your Reliable Partner for Electrical Supplies
+  </h1>
+  <p className="text-xl text-muted mb-10 leading-relaxed max-w-lg">
+  Fast delivery of quality switchgears, cables, and automation tools. Empowering projects with genuine OEM products and massive ready stock.
+  </p>
+  
+  <div className="flex flex-col sm:flex-row gap-4">
+  <Link to="/products" className="bg-forest text-white px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-black hover:bg-gold hover:text-forest transition-all duration-300 shadow-xl focus-ring flex items-center justify-center gap-2">
+  Explore Catalog <ArrowRight size={18} />
+  </Link>
+  <Link to="/contact" className="bg-transparent border-2 border-forest text-forest px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-bold hover:bg-forest/5 transition-all duration-300 focus-ring">
+  Bulk Enquiry
+  </Link>
+  </div>
+  </motion.div>
+  
+  <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="w-full lg:w-1/2 relative hidden lg:block">
+  <div className="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-border">
+  <img src="/hero-bg.png" alt="Industrial Facility" className="w-full h-full object-cover" />
+  <div className="absolute inset-0 bg-gradient-to-t from-forest/40 to-transparent"></div>
+  </div>
+  </motion.div>
+  </div>
+  </section>
 
- <div className="relative z-10 container mx-auto w-full">
- <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={fadeUp} className="max-w-3xl">
- <h1 className="text-display font-black text-forest mb-4 leading-tight tracking-tight drop-shadow-sm">
- J.K Industrial Impex
- </h1>
- <p className="text-2xl font-bold text-slate-700 mb-10 max-w-2xl leading-relaxed">
- Southern India's premium B2B electrical distributor. Fast delivery of quality switchgears, cables, and automation tools.
- </p>
- 
- <div className="bg-white p-2 flex items-center mb-8 max-w-2xl shadow-xl rounded-full focus-within:ring-2 focus-within:ring-gold focus-within:ring-offset-2">
- <input 
- type="text" 
- placeholder="Search Products, Brands, Categories..." 
- className="bg-transparent border-none text-forest placeholder-slate-500 w-full px-6 py-3 focus:outline-none font-medium"
- />
- <button className="bg-gold hover:bg-forest transition-colors text-forest hover:text-white px-8 py-3 rounded-full font-black uppercase tracking-wider text-sm whitespace-nowrap duration-300 focus-ring">
- Search
- </button>
- </div>
-
- <div className="flex flex-col sm:flex-row gap-4">
- <Link to="/products" className="bg-gold text-forest px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-black hover:bg-forest hover:text-white transition-colors duration-300 shadow-xl focus-ring border-2 border-transparent">
- Explore Catalog
- </Link>
- <Link to="/contact" className="bg-transparent border-2 border-forest text-forest px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-bold hover:bg-forest hover:text-white transition-all duration-300 focus-ring">
- Bulk Enquiry
- </Link>
- </div>
- </motion.div>
- </div>
- </section>
-
- {/* 2. Brand Logos (Trust) */}
- <section className="bg-surface py-8 border-b border-border">
+  {/* 2. Brand Logos (Trust) */}
+  <section className="bg-white py-12 border-b border-border">
  <div className="container overflow-hidden max-w-full px-0">
  <p className="text-center text-xs font-bold text-muted uppercase tracking-widest mb-8">Authorized Distributors For</p>
  
@@ -91,8 +80,8 @@ const Home = () => {
  </div>
  </section>
 
- {/* 3. Product Categories */}
- <section className="py-24 bg-white">
+  {/* 3. Product Categories */}
+  <section className="py-24 bg-surface">
  <div className="container mx-auto">
  <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-center mb-16 max-w-2xl mx-auto">
  <span className="text-xs font-bold text-gold tracking-widest uppercase">Comprehensive Inventory</span>
@@ -130,8 +119,8 @@ const Home = () => {
  </section>
 
 
- {/* 5. Why JK Industrial Impex (Light & Visual) */}
- <section className="py-24 bg-surface text-forest relative overflow-hidden">
+  {/* 5. Why JK Industrial Impex (Light & Visual) */}
+  <section className="py-24 bg-white text-forest relative overflow-hidden">
  <div className="container mx-auto relative z-10">
  <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
  <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="space-y-8">
@@ -226,8 +215,8 @@ const Home = () => {
  </section>
 
 
- {/* 10. Contact CTA */}
- <section className="py-24 bg-white text-center">
+  {/* 10. Contact CTA */}
+  <section className="py-24 bg-surface text-center">
  <div className="container mx-auto max-w-5xl">
  <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-surface rounded-3xl p-12 md:p-20 border border-border shadow-sm relative overflow-hidden">
  <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
@@ -237,9 +226,9 @@ const Home = () => {
  <h2 className="text-h1 font-black mb-6 leading-tight text-forest">Need Bulk Electrical Supplies?</h2>
  <p className="text-xl text-muted mb-12 max-w-2xl mx-auto">Upload your Bill of Materials (BOM) or contact our sales team for special corporate pricing.</p>
  <div className="flex flex-col sm:flex-row justify-center gap-6">
- <Link to="/contact" className="bg-gold text-white px-12 py-5 text-xs font-bold uppercase tracking-[0.2em] hover:bg-forest transition-all shadow-xl rounded-full">
- Request a Quote
- </Link>
+  <Link to="/contact" className="bg-forest text-white px-12 py-5 text-xs font-bold uppercase tracking-[0.2em] hover:bg-gold hover:text-forest transition-all shadow-xl rounded-full focus-ring">
+  Request a Quote
+  </Link>
  <a href="https://wa.me/918044556677" target="_blank" rel="noreferrer" className="bg-[#25D366] text-white px-12 py-5 text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#1DA851] transition-all shadow-xl rounded-full">
  WhatsApp Us
  </a>
