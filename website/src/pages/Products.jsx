@@ -4,7 +4,7 @@ import { fadeUp } from '../animations/fadeUp';
 import { fadeIn } from '../animations/fadeIn';
 import productsData from '../data/products.json';
 import { Search, SlidersHorizontal, ChevronRight, ChevronLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 const Products = () => {
@@ -13,7 +13,23 @@ const Products = () => {
  const [selectedManufacturer, setSelectedManufacturer] = useState('All Manufacturers');
  const [currentPage, setCurrentPage] = useState(1);
  const [showFilters, setShowFilters] = useState(false);
+ const [searchParams] = useSearchParams();
  const itemsPerPage = 6;
+
+ useEffect(() => {
+   const brandQuery = searchParams.get('brand');
+   if (brandQuery) {
+      const options = ['Schneider', 'Siemens', 'ABB', 'Polycab', 'Fuji Electric', 'Rexnord', 'Hilcool', 'Omron', 'Spectrum', 'BN', 'Larsen & Toubro', 'Havells'];
+      const matched = options.find(opt => 
+        opt.toLowerCase() === brandQuery.toLowerCase() || 
+        opt.replace(/\s+/g, '-').toLowerCase() === brandQuery.toLowerCase() ||
+        (brandQuery === 'lnt' && opt === 'Larsen & Toubro')
+      );
+      if (matched) {
+        setSelectedManufacturer(matched);
+      }
+   }
+ }, [searchParams]);
 
  useEffect(() => {
  setCurrentPage(1);
@@ -131,6 +147,8 @@ const Products = () => {
  <option>Omron</option>
  <option>Spectrum</option>
  <option>BN</option>
+ <option>Larsen & Toubro</option>
+ <option>Havells</option>
  </select>
  </div>
 

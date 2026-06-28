@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { fadeUp } from '../animations/fadeUp';
 import brandsData from '../data/brands.json';
+import { Link } from 'react-router-dom';
 
 const Brands = () => {
  return (
@@ -38,9 +39,9 @@ const Brands = () => {
  <p className="text-muted leading-relaxed mb-8">
  {brand.description}
  </p>
- <a href={`/products?brand=${brand.slug}`} className="inline-block px-8 py-3 border-2 border-forest text-forest font-bold text-xs uppercase tracking-widest hover:bg-forest hover:text-white transition-all">
+ <Link to={`/products?brand=${brand.slug}`} className="inline-block px-8 py-3 border-2 border-forest text-forest font-bold text-xs uppercase tracking-widest hover:bg-forest hover:text-white transition-all">
  View Products
- </a>
+ </Link>
  </motion.div>
  ))}
  </div>
