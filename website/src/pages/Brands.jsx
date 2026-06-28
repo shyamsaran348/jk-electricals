@@ -39,9 +39,9 @@ const Brands = () => {
  <p className="text-muted leading-relaxed mb-8">
  {brand.description}
  </p>
- <Link to={`/products?brand=${brand.slug}`} className="inline-block px-8 py-3 border-2 border-forest text-forest font-bold text-xs uppercase tracking-widest hover:bg-forest hover:text-white transition-all">
- View Products
- </Link>
+  <Link to={`/products?brand=${brand.slug}`} className="bg-transparent border-2 border-forest text-forest px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-black hover:bg-forest hover:text-white transition-all duration-300 focus-ring flex items-center justify-center gap-2">
+  View Products
+  </Link>
  </motion.div>
  ))}
  </div>

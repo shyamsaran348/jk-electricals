@@ -72,8 +72,8 @@ const Products = () => {
  <p className="text-lg text-muted mb-10 leading-relaxed">
  Access high-precision components, switchgear, and automation solutions for large-scale enterprise operations.
  </p>
- <div className="relative group shadow-sm flex items-center border border-border focus-within:border-gold transition-colors">
- <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+ <div className="relative group shadow-sm flex items-center border border-border focus-within:border-gold transition-colors rounded-full overflow-hidden">
+ <div className="absolute inset-y-0 left-0 pl-6 flex items-center pointer-events-none">
  <Search className="text-muted w-6 h-6" />
  </div>
  <input 
@@ -83,7 +83,7 @@ const Products = () => {
  value={searchTerm}
  onChange={(e) => setSearchTerm(e.target.value)}
  />
- <button className="absolute inset-y-2 right-2 px-8 bg-forest text-white font-bold text-sm uppercase tracking-widest hover:bg-gold transition-colors duration-300">
+ <button className="absolute inset-y-2 right-2 px-8 bg-forest text-white font-black text-sm uppercase tracking-widest hover:bg-gold hover:text-forest transition-colors duration-300 rounded-full focus-ring">
  Search
  </button>
  </div>
@@ -157,7 +157,7 @@ const Products = () => {
  <div className="absolute top-0 right-0 w-32 h-32 bg-gold/10 rounded-full blur-2xl transform translate-x-1/2 -translate-y-1/2"></div>
  <h4 className="text-xl font-black mb-3 text-forest relative z-10 tracking-tight">Bulk Orders</h4>
  <p className="text-muted mb-6 text-sm relative z-10">Need a custom procurement list for your facility?</p>
- <Link to="/contact" className="w-full py-4 bg-forest text-white font-bold text-xs uppercase tracking-widest hover:bg-gold transition-colors rounded-full relative z-10 flex items-center justify-center">
+ <Link to="/contact" className="w-full py-4 bg-forest text-white font-black text-sm uppercase tracking-widest hover:bg-gold hover:text-forest transition-colors rounded-full relative z-10 flex items-center justify-center focus-ring">
  Contact Expert
  </Link>
  </div>

@@ -19,7 +19,7 @@ const Home = () => {
  </Helmet>
  
   {/* 1. Hero Section */}
-  <section className="relative pt-24 pb-16 lg:pt-40 lg:pb-32 flex items-center overflow-hidden bg-surface">
+  <section className="relative pt-24 pb-16 lg:pt-40 lg:pb-32 flex items-center overflow-hidden bg-white">
   <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12">
   <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="w-full lg:w-1/2">
   <span className="text-sm font-bold text-gold tracking-widest uppercase mb-4 block">Premium B2B Distributor</span>
@@ -34,7 +34,7 @@ const Home = () => {
   <Link to="/products" className="bg-forest text-white px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-black hover:bg-gold hover:text-forest transition-all duration-300 shadow-xl focus-ring flex items-center justify-center gap-2">
   Explore Catalog <ArrowRight size={18} />
   </Link>
-  <Link to="/contact" className="bg-transparent border-2 border-forest text-forest px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-bold hover:bg-forest/5 transition-all duration-300 focus-ring">
+  <Link to="/contact" className="bg-transparent border-2 border-forest text-forest px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-black hover:bg-forest hover:text-white transition-all duration-300 focus-ring flex items-center justify-center gap-2">
   Bulk Enquiry
   </Link>
   </div>
@@ -50,7 +50,7 @@ const Home = () => {
   </section>
 
   {/* 2. Brand Logos (Trust) */}
-  <section className="bg-white py-12 border-b border-border">
+  <section className="bg-surface py-12 border-b border-border">
  <div className="container overflow-hidden max-w-full px-0">
  <p className="text-center text-xs font-bold text-muted uppercase tracking-widest mb-8">Authorized Distributors For</p>
  
@@ -81,7 +81,7 @@ const Home = () => {
  </section>
 
   {/* 3. Product Categories */}
-  <section className="py-24 bg-surface">
+  <section className="py-24 bg-white">
  <div className="container mx-auto">
  <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-center mb-16 max-w-2xl mx-auto">
  <span className="text-xs font-bold text-gold tracking-widest uppercase">Comprehensive Inventory</span>
@@ -120,7 +120,7 @@ const Home = () => {
 
 
   {/* 5. Why JK Industrial Impex (Light & Visual) */}
-  <section className="py-24 bg-white text-forest relative overflow-hidden">
+  <section className="py-24 bg-surface text-forest relative overflow-hidden">
  <div className="container mx-auto relative z-10">
  <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
  <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="space-y-8">
@@ -176,7 +176,7 @@ const Home = () => {
 
 
  {/* 8. Project Highlights (Condensed) */}
- <section className="py-24 bg-surface">
+ <section className="py-24 bg-white">
  <div className="container mx-auto">
  <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
  <div>
@@ -226,10 +226,10 @@ const Home = () => {
  <h2 className="text-h1 font-black mb-6 leading-tight text-forest">Need Bulk Electrical Supplies?</h2>
  <p className="text-xl text-muted mb-12 max-w-2xl mx-auto">Upload your Bill of Materials (BOM) or contact our sales team for special corporate pricing.</p>
  <div className="flex flex-col sm:flex-row justify-center gap-6">
-  <Link to="/contact" className="bg-forest text-white px-12 py-5 text-xs font-bold uppercase tracking-[0.2em] hover:bg-gold hover:text-forest transition-all shadow-xl rounded-full focus-ring">
+  <Link to="/contact" className="bg-forest text-white px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-black hover:bg-gold hover:text-forest transition-all duration-300 shadow-xl focus-ring flex items-center justify-center gap-2">
   Request a Quote
   </Link>
- <a href="https://wa.me/918044556677" target="_blank" rel="noreferrer" className="bg-[#25D366] text-white px-12 py-5 text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#1DA851] transition-all shadow-xl rounded-full">
+ <a href="https://wa.me/918044556677" target="_blank" rel="noreferrer" className="bg-[#128C7E] text-white px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-black hover:bg-[#075E54] transition-all shadow-xl focus-ring flex items-center justify-center gap-2 border-2 border-[#128C7E]">
  WhatsApp Us
  </a>
  </div>

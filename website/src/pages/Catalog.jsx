@@ -46,7 +46,7 @@ const Catalog = () => {
           <button 
             onClick={downloadCatalogImage}
             disabled={isDownloading}
-            className={`flex items-center gap-3 px-8 py-4 rounded-full font-bold uppercase tracking-widest transition-all duration-300 focus-ring ${isDownloading ? 'bg-muted text-white cursor-not-allowed' : 'bg-gold hover:bg-forest text-forest hover:text-white shadow-md hover:shadow-xl'}`}
+            className={`flex items-center gap-3 px-8 py-4 rounded-full font-black text-sm uppercase tracking-widest transition-all duration-300 focus-ring shadow-xl ${isDownloading ? 'bg-muted text-white cursor-not-allowed' : 'bg-forest text-white hover:bg-gold hover:text-forest'}`}
           >
             <Download size={20} />
             {isDownloading ? 'Generating...' : 'Download Image'}

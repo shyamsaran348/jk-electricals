@@ -200,8 +200,8 @@ const Contact = () => {
  ></textarea>
  </div>
 
- <button type="submit" className="w-full h-16 bg-forest text-white font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-3 rounded-full hover:bg-gold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
- <Send className="w-4 h-4" />
+ <button type="submit" className="w-full h-16 bg-forest text-white font-black text-sm uppercase tracking-widest flex items-center justify-center gap-3 rounded-full hover:bg-gold hover:text-forest hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 focus-ring">
+ <Send className="w-5 h-5" />
  Submit Inquiry
  </button>
  </form>

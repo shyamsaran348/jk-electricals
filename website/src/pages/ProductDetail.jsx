@@ -111,12 +111,12 @@ const ProductDetail = () => {
 
  {/* Dual CTA */}
  <div className="flex flex-col sm:flex-row gap-4 sticky bottom-8 z-10 bg-surface/90 backdrop-blur-md p-4 border border-border shadow-xl rounded-full">
- <Link to="/contact" className="flex-1 py-4 bg-forest text-white font-bold text-xs uppercase tracking-widest hover:bg-gold transition-colors rounded-full shadow-md text-center">
- Request Formal Quote
- </Link>
- <a href="https://wa.me/918044556677" target="_blank" rel="noreferrer" className="flex-1 py-4 border border-border text-forest bg-white font-bold text-xs uppercase tracking-widest hover:border-forest transition-colors rounded-full shadow-sm text-center">
- WhatsApp Sales Team
- </a>
+  <Link to="/contact" className="flex-1 py-4 bg-forest text-white font-black text-sm uppercase tracking-widest hover:bg-gold hover:text-forest transition-colors rounded-full shadow-md text-center focus-ring">
+  Request Formal Quote
+  </Link>
+  <a href="https://wa.me/918044556677" target="_blank" rel="noreferrer" className="flex-1 py-4 bg-transparent border-2 border-forest text-forest font-black text-sm uppercase tracking-widest hover:bg-forest hover:text-white transition-colors rounded-full shadow-sm text-center focus-ring">
+  WhatsApp Sales Team
+  </a>
  </div>
  </motion.div>
 
