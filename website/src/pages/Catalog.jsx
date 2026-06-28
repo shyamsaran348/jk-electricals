@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import html2canvas from 'html2canvas';
+import * as htmlToImage from 'html-to-image';
 import { Download, CheckCircle2, ShieldCheck, Zap, Phone, Mail, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -14,19 +14,16 @@ const Catalog = () => {
     try {
       // Temporarily adjust styles for better capturing
       const element = catalogRef.current;
-      element.style.transform = 'scale(1)'; // Ensure no scaling issues
       
-      const canvas = await html2canvas(element, {
-        scale: 2, // High resolution
-        useCORS: true,
-        logging: false,
+      const dataUrl = await htmlToImage.toPng(element, {
+        quality: 1.0,
         backgroundColor: '#FFFFFF',
+        pixelRatio: 2, // High resolution
       });
 
-      const image = canvas.toDataURL('image/png', 1.0);
       const link = document.createElement('a');
       link.download = 'JK_Industrial_Impex_Brochure.png';
-      link.href = image;
+      link.href = dataUrl;
       link.click();
     } catch (error) {
       console.error('Failed to generate image', error);
