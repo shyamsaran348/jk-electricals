@@ -19,11 +19,11 @@ const Home = () => {
  </Helmet>
  
   {/* 1. Hero Section */}
-  <section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 flex items-center overflow-hidden bg-surface">
+  <section className="relative pt-24 pb-16 lg:pt-40 lg:pb-32 flex items-center overflow-hidden bg-surface">
   <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12">
   <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="w-full lg:w-1/2">
   <span className="text-sm font-bold text-gold tracking-widest uppercase mb-4 block">Premium B2B Distributor</span>
-  <h1 className="text-display font-black text-forest mb-6 leading-[1.1] tracking-tight">
+  <h1 className="text-4xl lg:text-display font-black text-forest mb-6 leading-[1.1] tracking-tight">
   Your Reliable Partner for Electrical Supplies
   </h1>
   <p className="text-xl text-muted mb-10 leading-relaxed max-w-lg">
@@ -151,7 +151,7 @@ const Home = () => {
  </div>
  </motion.div>
  
- <div className="grid grid-cols-2 gap-6">
+ <div className="grid grid-cols-2 gap-6 mt-12 lg:mt-0">
  <div className="bg-white p-8 border border-border shadow-md rounded-xl text-center flex flex-col justify-center items-center h-48">
  <div className="text-display font-black text-forest mb-2"><CountUp end={15} suffix="+" /></div>
  <div className="text-xs font-bold uppercase tracking-widest text-muted">Years Exp</div>

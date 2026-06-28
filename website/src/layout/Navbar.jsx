@@ -52,7 +52,7 @@ const Navbar = () => {
  <Download size={16} />
  <span>Catalog</span>
  </Link>
- <Link to="/contact" className="bg-gold text-forest hover:bg-forest hover:text-white px-6 py-2.5 rounded-full shadow-md text-sm font-black transition-all duration-300 focus-ring">
+ <Link to="/contact" className="bg-forest text-white hover:bg-gold hover:text-forest px-6 py-2.5 rounded-full shadow-md text-sm font-black transition-all duration-300 focus-ring">
  Get Quote
  </Link>
  </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
  <Download size={20} />
  <span>View Catalog</span>
  </Link>
- <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="bg-gold text-forest px-6 py-3 rounded-full text-center font-black focus-ring hover:bg-forest hover:text-white transition-colors">
+ <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="bg-forest text-white px-6 py-3 rounded-full text-center font-black focus-ring hover:bg-gold hover:text-forest transition-colors">
  Get Quote
  </Link>
  </div>
