@@ -45,9 +45,9 @@ const Navbar = () => {
 
  {/* Actions */}
  <div className="hidden lg:flex items-center space-x-4">
- <button className="p-2 text-forest hover:text-gold transition-colors focus-ring rounded-full">
+ <Link to="/products" className="p-2 text-forest hover:text-gold transition-colors focus-ring rounded-full" title="Search Products">
  <Search size={20} />
- </button>
+ </Link>
  <Link to="/catalog" className="flex items-center space-x-2 text-sm font-semibold text-forest hover:text-gold transition-colors focus-ring rounded-sm px-1">
  <Download size={16} />
  <span>Catalog</span>
