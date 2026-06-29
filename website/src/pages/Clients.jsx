@@ -51,7 +51,7 @@ const ClientLogo = ({ client }) => {
 
 const Clients = () => {
   return (
-    <div className="w-full bg-surface pb-24 pt-32">
+    <div className="w-full bg-white pb-24 pt-32">
       <Helmet>
         <title>Our Clients & Partners | JK Industrial Impex</title>
         <meta name="description" content="Trusted by leading industrial conglomerates and manufacturing plants across Southern India." />
@@ -67,7 +67,7 @@ const Clients = () => {
       </section>
 
       {/* Clients Visual Grid */}
-      <section className="py-24 bg-white border-y border-border mb-24">
+      <section className="py-24 bg-surface border-y border-border mb-24">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-16">
             

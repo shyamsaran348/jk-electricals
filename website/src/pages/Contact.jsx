@@ -35,7 +35,7 @@ const Contact = () => {
  };
 
  return (
- <div className="w-full bg-surface pb-24 pt-32">
+ <div className="w-full bg-white pb-24 pt-32">
  <Helmet>
  <title>Contact Us | JK Industrial Impex</title>
  <meta name="description" content="Get in touch with JK Industrial Impex for your electrical distribution needs." />

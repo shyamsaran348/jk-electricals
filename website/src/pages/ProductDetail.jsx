@@ -23,7 +23,7 @@ const ProductDetail = () => {
 
 
  return (
- <div className="w-full bg-surface pb-24 pt-28">
+ <div className="w-full bg-white pb-24 pt-28">
  <Helmet>
  <title>{product.name} | JK Industrial Impex</title>
  <meta name="description" content={`Purchase the ${product.name} from JK Industrial Impex. ${product.description.substring(0, 100)}...`} />

@@ -13,7 +13,7 @@ const About = () => {
  </Helmet>
 
  {/* Hero Section */}
- <section className="relative pt-40 pb-24 bg-surface flex items-center overflow-hidden border-b border-border">
+ <section className="relative pt-40 pb-24 bg-white flex items-center overflow-hidden border-b border-border">
  <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
  <div className="container mx-auto relative z-10">
  <motion.h1 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={fadeUp} className="text-display font-black text-forest max-w-3xl mb-6 tracking-tight">
@@ -66,7 +66,7 @@ const About = () => {
  </section>
 
  {/* Timeline Section */}
- <section className="py-24 bg-white border-y border-border">
+ <section className="py-24 bg-surface border-y border-border">
  <div className="container mx-auto">
  <div className="text-center mb-20">
  <span className="text-xs font-bold uppercase tracking-[0.2em] text-gold mb-4 block">Our Journey</span>

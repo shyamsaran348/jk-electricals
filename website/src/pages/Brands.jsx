@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Brands = () => {
  return (
- <div className="w-full bg-surface pb-24 pt-32">
+ <div className="w-full bg-white pb-24 pt-32">
  <div className="container mx-auto">
  
  {/* Header */}

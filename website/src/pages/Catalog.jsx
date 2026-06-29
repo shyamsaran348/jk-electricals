@@ -34,7 +34,7 @@ const Catalog = () => {
   };
 
   return (
-    <div className="bg-surface min-h-screen py-12">
+    <div className="bg-white min-h-screen py-12">
       <div className="container mx-auto px-4 max-w-5xl">
         
         {/* Download Action Bar */}

@@ -4,7 +4,7 @@ import { fadeIn } from '../animations/fadeIn';
 
 const Projects = () => {
  return (
- <div className="w-full bg-surface pb-24 pt-32 overflow-hidden">
+ <div className="w-full bg-white pb-24 pt-32 overflow-hidden">
  <div className="container mx-auto px-4">
  
  <div className="flex flex-col md:flex-row items-center gap-16">

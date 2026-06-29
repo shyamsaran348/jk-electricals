@@ -58,7 +58,7 @@ const Products = () => {
  );
 
  return (
- <div className="w-full bg-surface pb-24">
+ <div className="w-full bg-white pb-24 pt-32">
  <Helmet>
  <title>Industrial Inventory | JK Industrial Impex</title>
  <meta name="description" content="Access high-precision components, switchgear, and automation solutions for large-scale enterprise operations." />
