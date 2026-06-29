@@ -26,16 +26,16 @@ const Home = () => {
   <h1 className="text-4xl lg:text-display font-black text-forest mb-6 leading-[1.1] tracking-tight">
   Your Reliable Partner for Electrical Supplies
   </h1>
-  <p className="text-xl text-muted mb-10 leading-relaxed max-w-lg">
+  <p className="text-xl text-muted mb-8 leading-relaxed max-w-lg">
   Fast delivery of quality switchgears, cables, and automation tools. Empowering projects with genuine OEM products and massive ready stock.
   </p>
   
-  <div className="flex flex-col sm:flex-row gap-4">
-  <Link to="/products" className="bg-forest text-white px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-black hover:bg-gold hover:text-forest transition-all duration-300 shadow-xl focus-ring flex items-center justify-center gap-2">
+  <div className="flex flex-col sm:flex-row items-center gap-6 mt-4">
+  <Link to="/products" className="bg-forest text-white px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-black hover:bg-gold hover:text-forest transition-all duration-300 shadow-xl focus-ring flex items-center justify-center gap-2 w-full sm:w-auto">
   Explore Catalog <ArrowRight size={18} />
   </Link>
-  <Link to="/contact" className="bg-transparent border-2 border-forest text-forest px-8 py-4 rounded-full text-sm text-center uppercase tracking-widest font-black hover:bg-forest hover:text-white transition-all duration-300 focus-ring flex items-center justify-center gap-2">
-  Bulk Enquiry
+  <Link to="/contact" className="text-forest text-sm text-center uppercase tracking-widest font-black hover:text-gold transition-colors flex items-center justify-center gap-2 group w-full sm:w-auto">
+  Bulk Enquiry <span className="transform transition-transform group-hover:translate-x-1"><ArrowRight size={16} /></span>
   </Link>
   </div>
   </motion.div>

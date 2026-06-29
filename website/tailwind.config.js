@@ -20,11 +20,11 @@ export default {
     extend: {
       colors: {
         forest: "#0C3824",
-        gold: "#F59E0B",
+        gold: "#B45309",
         white: "#FFFFFF",
         surface: "#F7FAFC",
         text: "#1A202C",
-        muted: "#475569",
+        muted: "#334155",
         border: "#E2E8F0",
       },
       fontFamily: {
