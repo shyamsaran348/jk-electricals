@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { fadeUp } from '../animations/fadeUp';
 import { fadeIn } from '../animations/fadeIn';
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, Settings, Leaf } from 'lucide-react';
+import { Settings, Leaf } from 'lucide-react';
 
 const domesticClients = [
   { name: 'Hatsun Agro Products', logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Hatsun_Agro_Product_Logo.svg/512px-Hatsun_Agro_Product_Logo.svg.png' },

@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import * as htmlToImage from 'html-to-image';
 import { Download, CheckCircle2, ShieldCheck, Zap, Phone, Mail, MapPin } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const Catalog = () => {
   const catalogRef = useRef(null);

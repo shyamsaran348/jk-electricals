@@ -1,17 +1,12 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { fadeUp } from '../animations/fadeUp';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import productsData from '../data/products.json';
-import { ArrowRight, CheckCircle2, ShieldCheck, Truck, PackageCheck, Zap } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Truck, PackageCheck, Zap } from 'lucide-react';
 import CountUp from '../components/CountUp';
 
 const Home = () => {
- const featuredProducts = productsData.filter(p => p.isFeatured).slice(0, 4);
- const { scrollY } = useScroll();
- const y = useTransform(scrollY, [0, 1000], [0, 300]);
-
- return (
+  return (
  <div className="w-full">
  <Helmet>
  <title>JK Industrial Impex | Premium B2B Electrical Distributor</title>
