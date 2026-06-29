@@ -34,7 +34,6 @@ const Footer = () => {
  <ul className="space-y-3 text-sm text-gray-300">
  <li><a href="/jki_profile.pptx" download className="hover:text-gold transition-colors">Company Profile</a></li>
  <li><Link to="/products" className="hover:text-gold transition-colors">Product Catalogs</Link></li>
- <li><Link to="/about" className="hover:text-gold transition-colors">Certifications</Link></li>
  <li><Link to="/contact" className="hover:text-gold transition-colors">Support</Link></li>
  </ul>
  </div>
