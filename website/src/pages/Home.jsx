@@ -121,57 +121,61 @@ const Home = () => {
 
   {/* 5. Why JK Industrial Impex (Light & Visual) */}
   <section className="py-24 bg-surface text-forest relative overflow-hidden">
- <div className="container mx-auto relative z-10">
- <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
- <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="space-y-8">
- <span className="text-xs font-bold text-gold tracking-widest uppercase border-l-4 border-gold pl-4">The Distributor Advantage</span>
- <h2 className="text-h2 font-black leading-tight tracking-tight">Why Sourcing From Us Makes Difference</h2>
- 
- <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-4">
- <div className="bg-white p-6 border border-border shadow-sm rounded-xl">
- <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4"><PackageCheck className="text-gold" size={24} /></div>
- <h4 className="text-lg font-bold mb-2">Massive Ready Stock</h4>
- <p className="text-muted text-sm">Over 500+ SKUs available for immediate dispatch.</p>
- </div>
- <div className="bg-white p-6 border border-border shadow-sm rounded-xl">
- <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4"><ShieldCheck className="text-gold" size={24} /></div>
- <h4 className="text-lg font-bold mb-2">100% Genuine Products</h4>
- <p className="text-muted text-sm">Direct procurement from OEMs with test certificates.</p>
- </div>
- <div className="bg-white p-6 border border-border shadow-sm rounded-xl">
- <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4"><Truck className="text-gold" size={24} /></div>
- <h4 className="text-lg font-bold mb-2">Pan-India Logistics</h4>
- <p className="text-muted text-sm">Robust delivery network ensuring safe arrival.</p>
- </div>
- <div className="bg-white p-6 border border-border shadow-sm rounded-xl">
- <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4"><Zap className="text-gold" size={24} /></div>
- <h4 className="text-lg font-bold mb-2">B2B Pricing</h4>
- <p className="text-muted text-sm">Volume discounts and flexible credit terms.</p>
- </div>
- </div>
- </motion.div>
- 
- <div className="grid grid-cols-2 gap-6 mt-12 lg:mt-0">
- <div className="bg-white p-8 border border-border shadow-md rounded-xl text-center flex flex-col justify-center items-center h-48">
- <div className="text-display font-black text-forest mb-2"><CountUp end={15} suffix="+" /></div>
- <div className="text-xs font-bold uppercase tracking-widest text-muted">Years Exp</div>
- </div>
- <div className="bg-white p-8 border border-border shadow-md rounded-xl text-center flex flex-col justify-center items-center h-48">
- <div className="text-display font-black text-forest mb-2"><CountUp end={50} suffix="+" /></div>
- <div className="text-xs font-bold uppercase tracking-widest text-muted">Brands</div>
- </div>
- <div className="bg-white p-8 border border-border shadow-md rounded-xl text-center flex flex-col justify-center items-center h-48 transform lg:translate-y-6">
- <div className="text-display font-black text-forest mb-2"><CountUp end={5} suffix="K+" /></div>
- <div className="text-xs font-bold uppercase tracking-widest text-muted">Deliveries</div>
- </div>
- <div className="bg-white p-8 border border-border shadow-md rounded-xl text-center flex flex-col justify-center items-center h-48 transform lg:translate-y-6">
- <div className="text-display font-black text-forest mb-2"><CountUp end={24} suffix="/7" /></div>
- <div className="text-xs font-bold uppercase tracking-widest text-muted">Support</div>
- </div>
- </div>
- </div>
- </div>
- </section>
+  <div className="container mx-auto relative z-10">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+  <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="space-y-8">
+  <span className="text-xs font-bold text-gold tracking-widest uppercase border-l-4 border-gold pl-4">The Distributor Advantage</span>
+  <h2 className="text-h2 font-black leading-tight tracking-tight">Why Sourcing From Us Makes a Difference</h2>
+  
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-4">
+  <div className="bg-white p-6 border border-border shadow-sm rounded-xl">
+  <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4"><PackageCheck className="text-gold" size={24} /></div>
+  <h4 className="text-lg font-bold mb-2">Massive Ready Stock</h4>
+  <p className="text-muted text-sm">Over 500+ SKUs available for immediate dispatch.</p>
+  </div>
+  <div className="bg-white p-6 border border-border shadow-sm rounded-xl">
+  <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4"><ShieldCheck className="text-gold" size={24} /></div>
+  <h4 className="text-lg font-bold mb-2">100% Genuine Products</h4>
+  <p className="text-muted text-sm">Direct procurement from OEMs with test certificates.</p>
+  </div>
+  <div className="bg-white p-6 border border-border shadow-sm rounded-xl">
+  <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4"><Truck className="text-gold" size={24} /></div>
+  <h4 className="text-lg font-bold mb-2">Pan-India Logistics</h4>
+  <p className="text-muted text-sm">Robust delivery network ensuring safe arrival.</p>
+  </div>
+  <div className="bg-white p-6 border border-border shadow-sm rounded-xl">
+  <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4"><Zap className="text-gold" size={24} /></div>
+  <h4 className="text-lg font-bold mb-2">B2B Pricing</h4>
+  <p className="text-muted text-sm">Volume discounts and flexible credit terms.</p>
+  </div>
+  </div>
+  </motion.div>
+  
+  <div className="grid grid-cols-2 gap-6 mt-12 lg:mt-0">
+  <div className="bg-forest text-white p-8 border-none shadow-xl rounded-2xl text-center flex flex-col justify-center items-center h-48 relative overflow-hidden">
+  <div className="absolute inset-0 bg-gold/5"></div>
+  <div className="text-display font-black text-white mb-2 relative z-10"><CountUp end={15} suffix="+" /></div>
+  <div className="text-xs font-bold uppercase tracking-widest text-gold relative z-10">Years Exp</div>
+  </div>
+  <div className="bg-forest text-white p-8 border-none shadow-xl rounded-2xl text-center flex flex-col justify-center items-center h-48 relative overflow-hidden">
+  <div className="absolute inset-0 bg-gold/5"></div>
+  <div className="text-display font-black text-white mb-2 relative z-10"><CountUp end={50} suffix="+" /></div>
+  <div className="text-xs font-bold uppercase tracking-widest text-gold relative z-10">Brands</div>
+  </div>
+  <div className="bg-forest text-white p-8 border-none shadow-xl rounded-2xl text-center flex flex-col justify-center items-center h-48 transform lg:translate-y-8 relative overflow-hidden">
+  <div className="absolute inset-0 bg-gold/5"></div>
+  <div className="text-display font-black text-white mb-2 relative z-10"><CountUp end={5} suffix="K+" /></div>
+  <div className="text-xs font-bold uppercase tracking-widest text-gold relative z-10">Deliveries</div>
+  </div>
+  <div className="bg-forest text-white p-8 border-none shadow-xl rounded-2xl text-center flex flex-col justify-center items-center h-48 transform lg:translate-y-8 relative overflow-hidden">
+  <div className="absolute inset-0 bg-gold/5"></div>
+  <div className="text-display font-black text-white mb-2 relative z-10"><CountUp end={24} suffix="/7" /></div>
+  <div className="text-xs font-bold uppercase tracking-widest text-gold relative z-10">Support</div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
 
 
 
