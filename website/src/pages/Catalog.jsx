@@ -60,27 +60,27 @@ const Catalog = () => {
           style={{ width: '100%', maxWidth: '1000px', margin: '0 auto', position: 'relative' }}
         >
           {/* Header Section */}
-          <div className="bg-forest text-white p-12 relative overflow-hidden">
+          <div className="bg-surface text-forest p-12 relative overflow-hidden border-b border-border">
             <div className="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
             
             <div className="relative z-10 flex flex-col md:flex-row items-start justify-between gap-8">
               <div>
                   <div className="flex items-center gap-4 mb-6">
                     {/* Company Logo Added Here */}
-                    <div className="w-16 h-24 flex items-center justify-center">
-                       <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+                    <div className="w-16 h-24 flex items-center justify-center overflow-hidden rounded-sm shadow-sm">
+                       <img src="/logo.png" alt="Logo" className="w-full h-full object-cover object-center scale-[1.35]" />
                     </div>
                   <div>
-                    <h1 className="text-5xl font-black tracking-tight text-white drop-shadow-md">J.K Industrial</h1>
+                    <h1 className="text-5xl font-black tracking-tight text-forest drop-shadow-sm">J.K Industrial</h1>
                     <h2 className="text-xl font-bold text-gold uppercase tracking-widest mt-1">Impex</h2>
                   </div>
                 </div>
-                <p className="text-lg text-white/90 font-medium max-w-xl leading-relaxed">
+                <p className="text-lg text-muted font-medium max-w-xl leading-relaxed">
                   Southern India's premium B2B electrical distributor. Providing you all kinds of Industrial Materials with consistent professionalism since 2007.
                 </p>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 min-w-[280px]">
+              <div className="bg-white p-6 rounded-xl border border-border shadow-sm min-w-[280px]">
                 <h3 className="text-gold font-bold uppercase tracking-widest text-sm mb-4">Contact Us</h3>
                 <div className="flex items-center gap-3 mb-3 text-sm font-medium">
                   <Phone size={16} className="text-gold" />
