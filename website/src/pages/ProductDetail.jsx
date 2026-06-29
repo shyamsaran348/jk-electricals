@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { fadeUp } from '../animations/fadeUp';
 import productsData from '../data/products.json';
-import { ChevronRight, ArrowLeft, Download } from 'lucide-react';
+import { ChevronRight, ArrowLeft } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
 const ProductDetail = () => {
@@ -89,12 +89,8 @@ const ProductDetail = () => {
  {/* Key Features */}
  <div className="bg-white p-8 rounded-3xl shadow-sm border border-border relative overflow-hidden">
  <div className="absolute top-0 left-0 w-2 h-full bg-gold"></div>
- <div className="flex items-center justify-between mb-6">
+ <div className="flex items-center mb-6">
  <h4 className="text-sm font-bold uppercase tracking-widest text-forest">Key Specifications</h4>
- <Link to="/resources" className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-gold hover:text-forest transition-colors">
- <Download className="w-4 h-4" />
- Tech Specs
- </Link>
  </div>
  <ul className="space-y-4">
  {product.features.map((feature, idx) => (
