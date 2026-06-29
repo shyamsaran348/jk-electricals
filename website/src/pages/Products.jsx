@@ -194,11 +194,6 @@ const Products = () => {
  alt={product.name}
  className="w-full h-full object-cover mix-blend-multiply transition-transform duration-700 group-hover:scale-110"
  />
- {product.isNewArrival && (
- <span className="absolute top-4 left-4 bg-gold text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full shadow-sm">
- New Arrival
- </span>
- )}
  </div>
  <div className="p-8 flex flex-col flex-grow">
  <p className="text-[10px] font-bold uppercase tracking-widest text-muted mb-3">{product.category}</p>
