@@ -65,11 +65,11 @@ const Catalog = () => {
             
             <div className="relative z-10 flex flex-col md:flex-row items-start justify-between gap-8">
               <div>
-                <div className="flex items-center gap-4 mb-6">
-                  {/* Company Logo Added Here */}
-                  <div className="w-16 h-24 bg-white rounded-md flex items-center justify-center p-2 shadow-lg">
-                     <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
-                  </div>
+                  <div className="flex items-center gap-4 mb-6">
+                    {/* Company Logo Added Here */}
+                    <div className="w-16 h-24 flex items-center justify-center">
+                       <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+                    </div>
                   <div>
                     <h1 className="text-5xl font-black tracking-tight text-white drop-shadow-md">J.K Industrial</h1>
                     <h2 className="text-xl font-bold text-gold uppercase tracking-widest mt-1">Impex</h2>
