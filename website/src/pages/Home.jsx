@@ -14,7 +14,7 @@ const Home = () => {
  </Helmet>
  
   {/* 1. Hero Section */}
-  <section className="relative pt-24 pb-16 lg:pt-40 lg:pb-32 flex items-center overflow-hidden bg-white">
+  <section className="relative pt-8 pb-12 lg:pt-16 lg:pb-24 flex items-center overflow-hidden bg-white">
   <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12">
   <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="w-full lg:w-1/2">
   <span className="text-sm font-bold text-gold tracking-widest uppercase mb-4 block">Premium B2B Distributor</span>
@@ -147,24 +147,24 @@ const Home = () => {
   </motion.div>
   
   <div className="grid grid-cols-2 gap-6 mt-12 lg:mt-0">
-  <div className="bg-forest text-white p-8 border-none shadow-xl rounded-2xl text-center flex flex-col justify-center items-center h-48 relative overflow-hidden">
-  <div className="absolute inset-0 bg-gold/5"></div>
-  <div className="text-display font-black text-white mb-2 relative z-10"><CountUp end={15} suffix="+" /></div>
+  <div className="bg-white text-forest p-8 border border-border shadow-sm rounded-2xl text-center flex flex-col justify-center items-center h-48 relative overflow-hidden group hover:border-forest transition-colors">
+  <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+  <div className="text-display font-black text-forest mb-2 relative z-10"><CountUp end={15} suffix="+" /></div>
   <div className="text-xs font-bold uppercase tracking-widest text-gold relative z-10">Years Exp</div>
   </div>
-  <div className="bg-forest text-white p-8 border-none shadow-xl rounded-2xl text-center flex flex-col justify-center items-center h-48 relative overflow-hidden">
-  <div className="absolute inset-0 bg-gold/5"></div>
-  <div className="text-display font-black text-white mb-2 relative z-10"><CountUp end={50} suffix="+" /></div>
+  <div className="bg-white text-forest p-8 border border-border shadow-sm rounded-2xl text-center flex flex-col justify-center items-center h-48 relative overflow-hidden group hover:border-forest transition-colors">
+  <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+  <div className="text-display font-black text-forest mb-2 relative z-10"><CountUp end={50} suffix="+" /></div>
   <div className="text-xs font-bold uppercase tracking-widest text-gold relative z-10">Brands</div>
   </div>
-  <div className="bg-forest text-white p-8 border-none shadow-xl rounded-2xl text-center flex flex-col justify-center items-center h-48 transform lg:translate-y-8 relative overflow-hidden">
-  <div className="absolute inset-0 bg-gold/5"></div>
-  <div className="text-display font-black text-white mb-2 relative z-10"><CountUp end={5} suffix="K+" /></div>
+  <div className="bg-white text-forest p-8 border border-border shadow-sm rounded-2xl text-center flex flex-col justify-center items-center h-48 transform lg:translate-y-8 relative overflow-hidden group hover:border-forest transition-colors">
+  <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+  <div className="text-display font-black text-forest mb-2 relative z-10"><CountUp end={5} suffix="K+" /></div>
   <div className="text-xs font-bold uppercase tracking-widest text-gold relative z-10">Deliveries</div>
   </div>
-  <div className="bg-forest text-white p-8 border-none shadow-xl rounded-2xl text-center flex flex-col justify-center items-center h-48 transform lg:translate-y-8 relative overflow-hidden">
-  <div className="absolute inset-0 bg-gold/5"></div>
-  <div className="text-display font-black text-white mb-2 relative z-10"><CountUp end={24} suffix="/7" /></div>
+  <div className="bg-white text-forest p-8 border border-border shadow-sm rounded-2xl text-center flex flex-col justify-center items-center h-48 transform lg:translate-y-8 relative overflow-hidden group hover:border-forest transition-colors">
+  <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+  <div className="text-display font-black text-forest mb-2 relative z-10"><CountUp end={24} suffix="/7" /></div>
   <div className="text-xs font-bold uppercase tracking-widest text-gold relative z-10">Support</div>
   </div>
   </div>
