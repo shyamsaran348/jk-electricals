@@ -98,10 +98,10 @@ const Home = () => {
  ].map((cat, idx) => (
  <motion.div key={idx} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={idx} className="group relative overflow-hidden h-72 border border-border bg-white shadow-sm block">
  <Link to={`/products?category=${cat.slug}`} className="block w-full h-full relative p-6">
- <div className="absolute inset-0 bg-contain bg-no-repeat bg-right-bottom transition-transform duration-700 group-hover:scale-110 opacity-40 mix-blend-multiply" style={{ backgroundImage: `url('${cat.img}')` }}></div>
+ <div className="absolute right-4 bottom-4 w-48 h-48 bg-contain bg-no-repeat bg-right-bottom transition-transform duration-700 group-hover:scale-110 opacity-50 mix-blend-multiply" style={{ backgroundImage: `url('${cat.img}')` }}></div>
  
  <div className="relative z-10 h-full flex flex-col justify-between">
- <h3 className="text-xl font-black text-forest uppercase tracking-wide max-w-[70%]">{cat.title}</h3>
+ <h3 className="text-xl font-black text-forest uppercase tracking-wide max-w-[60%]">{cat.title}</h3>
  <div className="w-10 h-10 bg-white border border-border shadow-sm flex items-center justify-center text-gold transform translate-x-[-10px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 rounded-full">
  <ArrowRight size={18} />
  </div>
