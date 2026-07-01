@@ -6,21 +6,21 @@ import { Helmet } from 'react-helmet-async';
 import { Settings, Leaf } from 'lucide-react';
 
 const domesticClients = [
-  { name: 'Hatsun Agro Products', logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Hatsun_Agro_Product_Logo.svg/512px-Hatsun_Agro_Product_Logo.svg.png' },
-  { name: 'Indian Coast Guards', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Indian_Coast_Guard_logo.svg/512px-Indian_Coast_Guard_logo.svg.png' },
-  { name: 'Parag Milk Foods', logo: 'https://upload.wikimedia.org/wikipedia/en/3/30/Parag_Milk_Foods_Logo.png' },
-  { name: 'Creamline Dairy (Jersey)', logo: 'https://www.godrejagrovet.com/public/images/logo/creamline-dairy.png' },
-  { name: 'IGP Engineers Ltd', logo: 'https://logo.clearbit.com/igpengineers.com' },
-  { name: 'EMAS Engineering', logo: 'https://logo.clearbit.com/emas.com' },
-  { name: 'PSL Holdings Ltd', logo: 'https://logo.clearbit.com/pslholdings.com.sg' },
-  { name: 'Farida Shoes Pvt Ltd', logo: 'https://logo.clearbit.com/faridagroup.com' },
-  { name: 'Aston Shoes Pvt Ltd', logo: 'https://logo.clearbit.com/aston.com' },
-  { name: 'Delta Shoes Pvt Ltd', logo: 'https://logo.clearbit.com/deltashoes.com' }
+  { name: 'Hatsun Agro Products', logo: 'https://www.google.com/s2/favicons?domain=hap.in&sz=128' },
+  { name: 'Indian Coast Guards', logo: 'https://www.google.com/s2/favicons?domain=indiancoastguard.gov.in&sz=128' },
+  { name: 'Parag Milk Foods', logo: 'https://www.google.com/s2/favicons?domain=paragmilkfoods.com&sz=128' },
+  { name: 'Creamline Dairy (Jersey)', logo: 'https://www.google.com/s2/favicons?domain=creamlinedairy.com&sz=128' },
+  { name: 'IGP Engineers Ltd', logo: 'https://www.google.com/s2/favicons?domain=igpengineers.com&sz=128' },
+  { name: 'EMAS Engineering', logo: 'https://www.google.com/s2/favicons?domain=emas.com&sz=128' },
+  { name: 'PSL Holdings Ltd', logo: 'https://www.google.com/s2/favicons?domain=pslholdings.com.sg&sz=128' },
+  { name: 'Farida Shoes Pvt Ltd', logo: 'https://www.google.com/s2/favicons?domain=faridagroup.com&sz=128' },
+  { name: 'Aston Shoes Pvt Ltd', logo: 'https://www.google.com/s2/favicons?domain=aston.com&sz=128' },
+  { name: 'Delta Shoes Pvt Ltd', logo: 'https://www.google.com/s2/favicons?domain=deltashoes.com&sz=128' }
 ];
 
 const overseasClients = [
-  { name: 'Al Kuhaimi Metal Industries', logo: 'https://logo.clearbit.com/alkuhaimi.com', location: 'Dammam, KSA' },
-  { name: 'Al Khaleej Holding & Co', logo: 'https://logo.clearbit.com/alkhaleejholding.com', location: 'Alkhobar, KSA' }
+  { name: 'Al Kuhaimi Metal Industries', logo: 'https://www.google.com/s2/favicons?domain=alkuhaimi.com&sz=128', location: 'Dammam, KSA' },
+  { name: 'Al Khaleej Holding & Co', logo: 'https://www.google.com/s2/favicons?domain=alkhaleejholding.com&sz=128', location: 'Alkhobar, KSA' }
 ];
 
 const ClientLogo = ({ client }) => {
